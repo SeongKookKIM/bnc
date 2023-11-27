@@ -6,6 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import "./Locales/i18n";
 
 import "./Style.scss";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

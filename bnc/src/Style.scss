@@ -1,6 +1,7 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 $font: "Noto Sans KR", sans-serif;
+$logoColor: #36579e;
 
 @mixin flexCenter() {
   display: flex;
@@ -33,7 +34,96 @@ li {
 }
 
 // NAV
-
+.App {
+  position: relative;
+  .nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    .nav-inner {
+      width: 100%;
+      max-width: 1270px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 0;
+      .logo-box {
+        width: 300px;
+        cursor: pointer;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .gnb {
+        ul {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 0;
+          padding: 0;
+          background-color: white;
+          li {
+            cursor: pointer;
+            span {
+              font-size: 17px;
+              font-weight: 500;
+              display: block;
+              width: 100%;
+              height: 100%;
+              padding: 20px 20px;
+              &:hover {
+                background-color: $logoColor;
+                color: white;
+              }
+            }
+            .dropdown {
+              width: 100%;
+              height: 100%;
+              button {
+                width: 100%;
+                height: 100%;
+                padding: 20px 20px;
+                --bs-btn-bg: none;
+                --bs-btn-color: black;
+                --bs-btn-border-color: none;
+                --bs-btn-hover-bg: none;
+                --bs-btn-hover-border-color: none;
+                --bs-btn-focus-shadow-rgb: none;
+                border-radius: 0;
+                font-size: 17px;
+                font-weight: 500;
+                &:hover {
+                  color: white;
+                  background-color: $logoColor;
+                }
+              }
+              .btn.show {
+                color: white;
+                background-color: $logoColor;
+                border-color: none;
+              }
+              .dropdown-menu {
+                border-radius: 0;
+                a {
+                  font-size: 16px;
+                  &:hover {
+                    background-color: $logoColor;
+                    color: white;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 // Home
 .home {
   width: 100%;
@@ -49,7 +139,6 @@ li {
       display: flex;
       flex-direction: column;
       gap: 20px;
-      margin-bottom: 100px;
       pointer-events: none;
       strong {
         font-size: 37px;
@@ -119,6 +208,7 @@ li {
       div {
         position: relative;
         background-color: beige;
+        cursor: pointer;
         span {
           display: block;
           position: absolute;
