@@ -1,18 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
+import { useNavigate } from "react-router-dom";
 
 function Nav() {
+  const [menuActive, setMenuActive] = useState<number>(0);
+
+  let navigate = useNavigate();
   return (
     <div className="nav">
       <div className="nav-inner">
         <div className="logo-box">
-          <img src="/assets/image/logo.png" alt="logo" />
+          <img
+            src="/assets/image/home-logo-white.png"
+            alt="logo"
+            onClick={() => {
+              navigate("/");
+              setMenuActive(0);
+            }}
+          />
         </div>
         <nav className="gnb">
           <ul>
-            <li>
-              <span>회사소개</span>
+            <li className={menuActive === 1 ? "active" : ""}>
+              <span
+                onClick={() => {
+                  navigate("/about");
+                  setMenuActive(1);
+                }}
+              >
+                회사소개
+              </span>
             </li>
             <li>
               <span>사업영역</span>
@@ -25,7 +43,7 @@ function Nav() {
             </li>
             <li>
               {" "}
-              <DropdownButton id="dropdown-basic-button" title="한국어">
+              <DropdownButton id="dropdown-basic-button" title="Language">
                 <Dropdown.Item>한국어</Dropdown.Item>
                 <Dropdown.Item>영어</Dropdown.Item>
               </DropdownButton>

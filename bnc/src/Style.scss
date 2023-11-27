@@ -36,6 +36,8 @@ li {
 // NAV
 .App {
   position: relative;
+  top: 0;
+  left: 0;
   .nav {
     width: 100%;
     position: absolute;
@@ -67,6 +69,10 @@ li {
           margin: 0;
           padding: 0;
           background-color: white;
+          li.active {
+            background-color: $logoColor;
+            color: white;
+          }
           li {
             cursor: pointer;
             span {
@@ -189,7 +195,7 @@ li {
       }
       .swiper-button-prev,
       .swiper-button-next {
-        color: black;
+        color: white;
         transform: scale(0.7);
       }
     }
@@ -218,6 +224,7 @@ li {
           font-size: 14px;
           font-weight: 400;
           color: #999;
+          cursor: pointer;
         }
       }
       .home-about-content-box {
@@ -284,6 +291,211 @@ li {
           aspect-ratio: 2/1;
           background-color: beige;
           margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+// ABOUT
+.about {
+  width: 100%;
+  .about-banner {
+    width: 100%;
+    height: 420px;
+    background: url("../public/assets/image/about-banner.jpg") center center
+      no-repeat;
+    background-size: cover;
+    position: relative;
+    .about-banner-inner-bg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    .about-banner-inner {
+      width: 100%;
+      height: 100%;
+      max-width: 1270px;
+      margin: 0 auto;
+      position: relative;
+      strong {
+        font-size: 47px;
+        position: absolute;
+        bottom: 130px;
+        pointer-events: none;
+        color: white;
+      }
+    }
+  }
+  .about-inner {
+    width: 100%;
+    max-width: 1270px;
+    margin: 0 auto;
+    .about-inner-title {
+      width: 100%;
+      margin-top: 50px;
+      border-top: 5px solid black;
+      padding-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+      p {
+        font-size: 20px;
+        font-weight: 400;
+        pointer-events: none;
+        color: black;
+        line-height: 37px;
+      }
+    }
+    .about-introduction-box {
+      width: 100%;
+      height: 900px;
+      margin-top: 90px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .introduction {
+        width: 48%;
+        height: 100%;
+        .introduction-image {
+          width: 100%;
+          height: 400px;
+          background-color: beige;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .introduction-content-wrapper {
+          width: 100%;
+          height: 50%;
+          strong {
+            display: block;
+            font-size: 32px;
+            color: $logoColor;
+            pointer-events: none;
+            padding: 15px 0px;
+          }
+          .introduction-content {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            pointer-events: none;
+
+            p {
+              margin: 0;
+              padding: 0;
+              font-size: 16px;
+              color: black;
+              font-weight: 400;
+              padding-right: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .about-customer {
+    width: 100%;
+    margin-top: 50px;
+    .about-customer-box.first {
+      background-color: #d4f1fe;
+    }
+    .about-customer-box.second {
+      background-color: #001c51;
+      .customer-inner {
+        flex-direction: row-reverse;
+        .cutomer-content {
+          strong {
+            color: white;
+          }
+          .about-content {
+            p {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+
+    .about-customer-box {
+      width: 100%;
+      padding: 50px 0;
+      .customer-inner {
+        width: 100%;
+        max-width: 1270px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .cutomer-content {
+          width: 45%;
+          strong {
+            display: block;
+            font-size: 32px;
+            color: #001c51;
+            pointer-events: none;
+            padding: 15px 0px;
+          }
+          .about-content {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            pointer-events: none;
+
+            p {
+              margin: 0;
+              padding: 0;
+              font-size: 16px;
+              color: black;
+              font-weight: 400;
+              padding-right: 20px;
+            }
+          }
+        }
+        .cutomer-image {
+          width: 45%;
+          background-color: beige;
+        }
+      }
+    }
+  }
+  .about-contact {
+    width: 100%;
+    height: 350px;
+    background-color: beige;
+    margin-top: 90px;
+    .about-contact-inner {
+      width: 100%;
+      height: 100%;
+      max-width: 1270px;
+      margin: 0 auto;
+      .contact-content {
+        strong {
+          display: block;
+          font-size: 42px;
+          color: black;
+          padding: 70px 0 10px 0;
+          pointer-events: none;
+        }
+        p {
+          font-size: 20px;
+          color: black;
+          pointer-events: none;
+        }
+        button {
+          font-size: 20px;
+          background-color: white;
+          font-weight: 600;
+          border: none;
+          outline: none;
+          font-family: $font;
+          padding: 6px 20px;
+          cursor: pointer;
         }
       }
     }
