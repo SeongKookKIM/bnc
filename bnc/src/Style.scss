@@ -32,6 +32,10 @@ li {
   box-sizing: border-box;
   font-family: $font;
 }
+body.fixed {
+  height: 100%;
+  overflow-y: hidden;
+}
 
 // NAV
 .App {
@@ -656,13 +660,17 @@ li {
     form {
       width: 100%;
       margin-top: 50px;
-      border: 1px solid red;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+
       label {
         font-size: 18px;
         font-weight: 500;
+        color: #999;
+        span {
+          color: red;
+        }
       }
       input {
         width: 100%;
@@ -671,13 +679,152 @@ li {
         font-family: $font;
         font-weight: 600;
         font-size: 14px;
-        border-bottom: 2px solid black;
+        border-bottom: 1px solid black;
       }
-      .name {
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox  */
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+
+      .name,
+      .phone,
+      .email,
+      .hs-code {
         width: 45%;
         display: flex;
         flex-direction: column;
         gap: 10px;
+        margin-bottom: 50px;
+        input {
+          padding: 10px 2px;
+        }
+      }
+      .delivery,
+      .container,
+      .subject {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+        margin-bottom: 50px;
+        padding: 0;
+        .delivery-box,
+        .container-box {
+          width: 100%;
+          display: flex;
+          gap: 30px;
+          div {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            cursor: pointer;
+            input {
+              width: 15px;
+              height: 15px;
+            }
+            span {
+              font-size: 16px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+      .message {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        textarea {
+          width: 100%;
+          height: 180px;
+          border: 1px solid black;
+          outline: none;
+          resize: none;
+          font-family: $font;
+          font-weight: 600;
+          font-size: 14px;
+          padding: 10px 2px;
+        }
+      }
+      .agree {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        gap: 5px;
+        input {
+          width: 15px;
+          height: 15px;
+        }
+        p {
+          font-size: 16px;
+          font-weight: 700;
+          cursor: pointer;
+          margin: 0;
+          padding: 0;
+          &:hover + span {
+            color: #36579e;
+            text-decoration: underline;
+          }
+        }
+        span {
+          font-size: 16px;
+          font-weight: 700;
+          cursor: pointer;
+          margin: 0;
+          padding: 0;
+          &:hover {
+            color: #36579e;
+            text-decoration: underline;
+          }
+        }
+        .policy {
+          width: 100%;
+          height: 100vh;
+          position: fixed;
+          top: 0;
+          left: 0;
+          background-color: white;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          padding: 30px 15px;
+          z-index: 100;
+          overflow-y: scroll;
+          p {
+            font-size: 14px;
+            padding: 0;
+            margin: 0;
+          }
+          span {
+            font-size: 14px;
+          }
+          .close {
+            font-size: 20px;
+            position: absolute;
+            top: 20px;
+            right: 50px;
+            cursor: pointer;
+          }
+        }
+      }
+      button {
+        margin: 50px auto 0;
+        font-size: 18px;
+        font-weight: 500;
+        outline: none;
+        border: none;
+        background-color: #999;
+        color: white;
+        padding: 15px 80px;
       }
     }
   }
