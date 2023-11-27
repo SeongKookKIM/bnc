@@ -99,7 +99,7 @@ function About() {
       <div className="about-customer">
         <div className="about-customer-box first">
           <div className="customer-inner">
-            <div className="cutomer-content">
+            <div className="customer-content">
               <strong>Customer Service</strong>
               <div className="about-content">
                 <p>
@@ -125,12 +125,12 @@ function About() {
                 </p>
               </div>
             </div>
-            <div className="cutomer-image"></div>
+            <div className="customer-image"></div>
           </div>
         </div>
         <div className="about-customer-box second">
           <div className="customer-inner">
-            <div className="cutomer-content">
+            <div className="customer-content">
               <strong>Customized Global Logistics</strong>
               <div className="about-content">
                 <p>
@@ -158,12 +158,12 @@ function About() {
                 </p>
               </div>
             </div>
-            <div className="cutomer-image"></div>
+            <div className="customer-image"></div>
           </div>
         </div>
         <div className="about-customer-box third">
           <div className="customer-inner">
-            <div className="cutomer-content">
+            <div className="customer-content">
               <strong>Financial Stability</strong>
               <div className="about-content">
                 <p>
@@ -189,7 +189,7 @@ function About() {
                 </p>
               </div>
             </div>
-            <div className="cutomer-image"></div>
+            <div className="customer-image"></div>
           </div>
         </div>
       </div>

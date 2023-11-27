@@ -32,8 +32,15 @@ function Nav() {
                 회사소개
               </span>
             </li>
-            <li>
-              <span>사업영역</span>
+            <li className={menuActive === 2 ? "active" : ""}>
+              <span
+                onClick={() => {
+                  navigate("/service");
+                  setMenuActive(2);
+                }}
+              >
+                사업영역
+              </span>
             </li>
             <li>
               <span>견적요청</span>
@@ -45,7 +52,7 @@ function Nav() {
               {" "}
               <DropdownButton id="dropdown-basic-button" title="Language">
                 <Dropdown.Item>한국어</Dropdown.Item>
-                <Dropdown.Item>영어</Dropdown.Item>
+                <Dropdown.Item>English</Dropdown.Item>
               </DropdownButton>
             </li>
           </ul>
