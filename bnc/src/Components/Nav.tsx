@@ -44,7 +44,7 @@ function Nav() {
                 사업영역
               </span>
             </li>
-            <li>
+            <li className={menuActive === 3 ? "active" : ""}>
               <span
                 onClick={() => {
                   navigate("/inqury");
