@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -12,6 +13,9 @@ import "swiper/css/pagination";
 import { EffectFade, Navigation, Autoplay } from "swiper/modules";
 
 function HomeSlide() {
+  // Translation
+  const { t } = useTranslation();
+
   return (
     <>
       <Swiper
@@ -32,7 +36,26 @@ function HomeSlide() {
             muted
             loop
             playsInline
-            src="/assets/video/banner01.mp4"
+            src="/assets/video/home-banner01.mp4"
+            typeof="vidoe/mp4"
+          />
+          <div className="swiper-bg"></div>
+          <div className="home-banner-text">
+            <strong>{t(`home-banner.first.title-first`)}</strong>
+            <span>
+              {t(`home-banner.first.sub-title-first`)}
+              <br className="mobile" />{" "}
+              {t(`home-banner.first.sub-title-second`)}
+            </span>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            src="/assets/video/home-banner02.mp4"
             typeof="vidoe/mp4"
           />
           <div className="swiper-bg"></div>
@@ -49,7 +72,15 @@ function HomeSlide() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            src="/assets/video/home-banner03.mp4"
+            typeof="vidoe/mp4"
+          />
+          <div className="swiper-bg"></div>
           <div className="home-banner-text">
             <strong>
               Complex Global <br />
@@ -63,21 +94,15 @@ function HomeSlide() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-          <div className="home-banner-text">
-            <strong>
-              Complex Global <br />
-              Logistics Simplified
-            </strong>
-            <span>
-              Knowledgeable in all aspects of maritime regulations,{" "}
-              <br className="mobile" /> we offer complete ocean solutions for
-              your supply chain.
-            </span>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            src="/assets/video/home-banner04.mp4"
+            typeof="vidoe/mp4"
+          />
+          <div className="swiper-bg"></div>
           <div className="home-banner-text">
             <strong>
               Complex Global <br />

@@ -54,7 +54,9 @@ function Service() {
                 </p>
               </div>
             </div>
-            <div className="customer-image"></div>
+            <div className="customer-image">
+              <img src="/assets/image/service01.jpg" alt="service" />
+            </div>
           </div>
         </div>
         {/* Second */}
@@ -86,7 +88,9 @@ function Service() {
                 </p>
               </div>
             </div>
-            <div className="customer-image"></div>
+            <div className="customer-image">
+              <img src="/assets/image/service02.jpg" alt="service" />
+            </div>
           </div>
         </div>
         {/* Third */}
@@ -118,7 +122,9 @@ function Service() {
                 </p>
               </div>
             </div>
-            <div className="customer-image"></div>
+            <div className="customer-image">
+              <img src="/assets/image/service03.jpg" alt="service" />
+            </div>
           </div>
         </div>
         {/* Four */}
@@ -150,7 +156,9 @@ function Service() {
                 </p>
               </div>
             </div>
-            <div className="customer-image"></div>
+            <div className="customer-image">
+              <img src="/assets/image/service04.jpg" alt="service" />
+            </div>
           </div>
         </div>
         {/* Five */}
@@ -182,7 +190,9 @@ function Service() {
                 </p>
               </div>
             </div>
-            <div className="customer-image"></div>
+            <div className="customer-image">
+              <img src="/assets/image/service05.jpg" alt="service" />
+            </div>
           </div>
         </div>
       </div>

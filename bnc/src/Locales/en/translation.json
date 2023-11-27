@@ -1,14 +1,20 @@
 {
-  "header": {
-    "mypage": "My page",
-    "logout": "Sign Out",
-    "login": "Sign In",
-    "register": "Sign Up",
-    "language": "Languages",
-    "help": "Help"
-  },
   "nav": {
-    "dashboard": "Dashboard",
-    "shopping-mall": "Shopping Mall"
+    "introduction": "ABOUT",
+    "services": "SERVICES",
+    "quotes": "QUOTES",
+    "contact": "CONTACT"
+  },
+  "home-banner": {
+    "first": {
+      "title-first": "BNC Logistics",
+      "sub-title-first": "Global No.1 Freight Forwarding Company",
+      "sub-title-second": "with BNC AMERICA (subsidiary)"
+    }
+  },
+  "home-introduction": {
+    "title": "The Best Price, Quick and Accurate Response",
+    "first": "We act as an agent for import and export cargo for large and small companies at home and abroad, and through a comprehensive system equipped with customs clearance, bonded transportation and bonded warehouse, and skilled employees with various experiences, we meet and satisfy customer needs with prompt and accurate replies and the best prices.",
+    "second": "We are fully prepared to drill. By becoming a second employee to companies, we aim to reduce logistics resources and provide accurate and safe services. In the future, we will continue to strive to reduce logistics costs for our customers by improving short-term delivery and efficiency, and will develop into a company that always puts customers first through honesty, trust, and creative customer service."
   }
 }

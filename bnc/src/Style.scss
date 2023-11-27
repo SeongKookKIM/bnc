@@ -146,10 +146,7 @@ body.fixed {
     .swiper {
       width: 100%;
       height: 100%;
-      img {
-        width: 100%;
-        height: 100%;
-      }
+
       video {
         width: 100%;
         height: 100%;
@@ -160,7 +157,7 @@ body.fixed {
         .swiper-bg {
           width: 100%;
           height: 100%;
-          background: rgba(255, 255, 255, 0.2);
+          background: rgba(0, 0, 0, 0.4);
           position: absolute;
           top: 0;
           left: 0;
@@ -181,12 +178,12 @@ body.fixed {
           opacity: 0;
           strong {
             font-size: 47px;
-            color: black;
+            color: white;
           }
           span {
             font-size: 20px;
             font-weight: 600;
-            color: black;
+            color: white;
           }
         }
       }
@@ -220,16 +217,7 @@ body.fixed {
         display: flex;
         align-items: center;
         color: #001c51;
-
-        span {
-          display: block;
-          position: absolute;
-          right: 0;
-          font-size: 14px;
-          font-weight: 400;
-          color: #999;
-          cursor: pointer;
-        }
+        pointer-events: none;
       }
       .home-about-content-box {
         width: 100%;
@@ -263,8 +251,15 @@ body.fixed {
       }
       div {
         position: relative;
-        background-color: beige;
         cursor: pointer;
+        .bg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.1);
+        }
         span {
           display: block;
           position: absolute;
@@ -272,7 +267,24 @@ body.fixed {
           font-weight: 500;
           top: 20px;
           left: 20px;
+          color: white;
+          transition: 0.3s;
         }
+      }
+      .home-introduction {
+        background: url(../public/assets/image/home-introduction.jpg) center
+          center no-repeat;
+        background-size: cover;
+      }
+      .home-quotes {
+        background: url(../public/assets/image/home-quotes.jpg) center center
+          no-repeat;
+        background-size: cover;
+      }
+      .home-directions {
+        background: url(../public/assets/image/home-directions.jpg) center
+          center no-repeat;
+        background-size: cover;
       }
     }
     .home-partners {
@@ -307,8 +319,8 @@ body.fixed {
   .about-banner {
     width: 100%;
     height: 420px;
-    background: url("../public/assets/image/about-banner.jpg") center center
-      no-repeat;
+    background: url("../public/assets/image/home-introduction.jpg") center
+      center no-repeat;
     background-size: cover;
     position: relative;
     .about-banner-inner-bg {
@@ -463,7 +475,12 @@ body.fixed {
         }
         .customer-image {
           width: 45%;
-          background-color: beige;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
         }
       }
     }
@@ -607,7 +624,11 @@ body.fixed {
         }
         .customer-image {
           width: 45%;
-          background-color: beige;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
         }
       }
     }
@@ -868,8 +889,10 @@ body.fixed {
   }
   .map-wrapper {
     width: 100%;
+    max-width: 1270px;
+
     height: 500px;
-    margin-top: 90px;
+    margin: 90px auto 0;
     overflow: hidden;
     background-color: beige;
   }

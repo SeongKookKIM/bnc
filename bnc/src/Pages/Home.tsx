@@ -1,7 +1,12 @@
 import React from "react";
 import HomeSlide from "../Components/HomeSlide";
+import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const { t } = useTranslation();
+
+  let navigate = useNavigate();
   return (
     <section className="home">
       {/* Home배너 */}
@@ -11,40 +16,47 @@ function Home() {
       <div className="inner">
         {/* Home배너 아래- */}
         <div className="home-about">
-          <h3>
-            Global Reach, Customized Solutions.<span>LEARN MORE{">"}</span>
-          </h3>
+          <h3>{t(`home-introduction.title`)}</h3>
           <div className="home-about-content-box">
             <div className="home-about-content">
-              <p>
-                EMO Trans has been implementing customized global logistics
-                solutions for over 50 years. With 250 offices in 120 countries
-                at your fingertips, you can reach every corner of the globe
-                right from your front door. Nimble yet stable, we’re proud to
-                deliver the
-              </p>
+              <p>{t(`home-introduction.first`)}</p>
             </div>
             <div className="home-about-content">
-              <p>
-                personalized service of a privately held company with the robust
-                infrastructure of a multi- national leader. Trust the expertise,
-                ingenuity and commitment of the EMO Trans team for creative,
-                customized logistics to solve your most complex cargo
-                challenges.
-              </p>
+              <p>{t(`home-introduction.second`)}</p>
             </div>
           </div>
         </div>
 
         {/* Home 페이지링크 */}
         <div className="home-link">
-          <div className="home-introduction">
+          <div
+            className="home-introduction"
+            onClick={() => {
+              navigate("/about");
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
+            <div className="bg"></div>
             <span>회사소개</span>
           </div>
-          <div className="home-estimate">
-            <span>사업견적</span>
+          <div
+            className="home-quotes"
+            onClick={() => {
+              navigate("/inqury");
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
+            <div className="bg"></div>
+            <span>견적요청</span>
           </div>
-          <div className="home-directions">
+          <div
+            className="home-directions"
+            onClick={() => {
+              navigate("/location");
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
+            <div className="bg"></div>
             <span>오시는길</span>
           </div>
         </div>

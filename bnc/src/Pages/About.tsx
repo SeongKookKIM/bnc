@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function About() {
+  let navigate = useNavigate();
+
   return (
     <div className="about">
       {/* 회사소개 배너 */}
@@ -64,7 +67,7 @@ function About() {
           </div>
           <div className="values introduction">
             <div className="introduction-image">
-              <img src="/assets/image/about-value.jpg" alt="value" />
+              <img src="/assets/image/about-second.jpg" alt="value" />
             </div>
             <div className="introduction-content-wrapper">
               <strong>Core Values</strong>
@@ -130,7 +133,9 @@ function About() {
                 </p>
               </div>
             </div>
-            <div className="customer-image"></div>
+            <div className="customer-image">
+              <img src="/assets/image/about-third.jpg" alt="about" />
+            </div>
           </div>
         </div>
         {/* Second */}
@@ -210,7 +215,15 @@ function About() {
               최고의 마케팅 그룹 에코마케팅에서 <br className="mobile" /> 놀라운
               매출 성장을 경험하세요.
             </p>
-            <button type="button">견적 요청하기</button>
+            <button
+              type="button"
+              onClick={() => {
+                navigate("/inqury");
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            >
+              견적 요청하기
+            </button>
           </div>
         </div>
       </div>
