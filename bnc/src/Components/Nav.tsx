@@ -10,6 +10,7 @@ function Nav() {
   return (
     <div className="nav">
       <div className="nav-inner">
+        {/* 로고박스 */}
         <div className="logo-box">
           <img
             src="/assets/image/home-logo-white.png"
@@ -20,6 +21,7 @@ function Nav() {
             }}
           />
         </div>
+        {/* GNB */}
         <nav className="gnb">
           <ul>
             <li className={menuActive === 1 ? "active" : ""}>
@@ -43,7 +45,14 @@ function Nav() {
               </span>
             </li>
             <li>
-              <span>견적요청</span>
+              <span
+                onClick={() => {
+                  navigate("/inqury");
+                  setMenuActive(3);
+                }}
+              >
+                견적요청
+              </span>
             </li>
             <li>
               <span>오시는길</span>

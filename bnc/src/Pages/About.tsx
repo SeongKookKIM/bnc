@@ -3,14 +3,15 @@ import React from "react";
 function About() {
   return (
     <div className="about">
+      {/* 회사소개 배너 */}
       <div className="about-banner">
         <div className="about-banner-inner-bg"></div>
-
         <div className="about-banner-inner">
           <strong>About BNC LOGISTICS</strong>
         </div>
       </div>
       <div className="about-inner">
+        {/* 회사소개 배너 아래- */}
         <div className="about-inner-title">
           <p>
             Established in 1965 in Stuttgart, Germany, EMO Trans has been on a
@@ -35,6 +36,7 @@ function About() {
           </p>
         </div>
 
+        {/* 회사소개 introduction */}
         <div className="about-introduction-box">
           <div className="network introduction">
             <div className="introduction-image">
@@ -96,7 +98,10 @@ function About() {
           </div>
         </div>
       </div>
+
+      {/* 회사소개  customer*/}
       <div className="about-customer">
+        {/* First */}
         <div className="about-customer-box first">
           <div className="customer-inner">
             <div className="customer-content">
@@ -128,6 +133,7 @@ function About() {
             <div className="customer-image"></div>
           </div>
         </div>
+        {/* Second */}
         <div className="about-customer-box second">
           <div className="customer-inner">
             <div className="customer-content">
@@ -161,6 +167,7 @@ function About() {
             <div className="customer-image"></div>
           </div>
         </div>
+        {/* Third */}
         <div className="about-customer-box third">
           <div className="customer-inner">
             <div className="customer-content">
@@ -193,6 +200,8 @@ function About() {
           </div>
         </div>
       </div>
+
+      {/* 회사소개 견적요청 링크 */}
       <div className="about-contact">
         <div className="about-contact-inner">
           <div className="contact-content">

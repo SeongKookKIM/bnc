@@ -3,13 +3,14 @@ import React from "react";
 function Service() {
   return (
     <div className="service">
+      {/* 서비스페이지 상단 배너 */}
       <div className="service-banner">
         <div className="service-banner-inner-bg"></div>
-
         <div className="service-banner-inner">
           <strong>Service</strong>
         </div>
       </div>
+      {/* 배너아래-글 */}
       <div className="service-inner">
         <h3>Complex Global Logistics, Simplified.</h3>
         <p>

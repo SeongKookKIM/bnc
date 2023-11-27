@@ -4,10 +4,12 @@ import HomeSlide from "../Components/HomeSlide";
 function Home() {
   return (
     <section className="home">
+      {/* Home배너 */}
       <div className="home-banner">
         <HomeSlide />
       </div>
       <div className="inner">
+        {/* Home배너 아래- */}
         <div className="home-about">
           <h3>
             Global Reach, Customized Solutions.<span>LEARN MORE{">"}</span>
@@ -34,6 +36,7 @@ function Home() {
           </div>
         </div>
 
+        {/* Home 페이지링크 */}
         <div className="home-link">
           <div className="home-introduction">
             <span>회사소개</span>
@@ -46,6 +49,7 @@ function Home() {
           </div>
         </div>
 
+        {/* 파트너 */}
         <div className="home-partners">
           <p>BNC LOGITICS와 함께하는 그룹</p>
           <ul>
