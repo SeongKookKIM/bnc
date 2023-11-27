@@ -6,6 +6,7 @@ import Footer from "./Components/Footer";
 import About from "./Pages/About";
 import Service from "./Pages/Service";
 import Inqury from "./Pages/Inqury";
+import Map from "./Pages/Map";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/service" element={<Service />}></Route>
         <Route path="/inqury" element={<Inqury />}></Route>
+        <Route path="/location" element={<Map />}></Route>
       </Routes>
       <Footer />
     </div>

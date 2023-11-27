@@ -55,7 +55,14 @@ function Nav() {
               </span>
             </li>
             <li>
-              <span>오시는길</span>
+              <span
+                onClick={() => {
+                  navigate("/location");
+                  setMenuActive(4);
+                }}
+              >
+                오시는길
+              </span>
             </li>
             <li>
               {" "}

@@ -72,7 +72,6 @@ body.fixed {
           align-items: center;
           margin: 0;
           padding: 0;
-          background-color: white;
           li.active {
             background-color: $logoColor;
             color: white;
@@ -86,6 +85,7 @@ body.fixed {
               width: 100%;
               height: 100%;
               padding: 20px 20px;
+              color: white;
               &:hover {
                 background-color: $logoColor;
                 color: white;
@@ -99,7 +99,7 @@ body.fixed {
                 height: 100%;
                 padding: 20px 20px;
                 --bs-btn-bg: none;
-                --bs-btn-color: black;
+                --bs-btn-color: white;
                 --bs-btn-border-color: none;
                 --bs-btn-hover-bg: none;
                 --bs-btn-hover-border-color: none;
@@ -825,6 +825,77 @@ body.fixed {
         background-color: #999;
         color: white;
         padding: 15px 80px;
+      }
+    }
+  }
+}
+
+// MAP
+.map {
+  width: 100%;
+  .map-banner {
+    width: 100%;
+    height: 420px;
+    background: url("../public/assets/image/about-banner.jpg") center center
+      no-repeat;
+    background-size: cover;
+    position: relative;
+    .map-banner-inner-bg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    .map-banner-inner {
+      width: 100%;
+      height: 100%;
+      max-width: 1270px;
+      margin: 0 auto;
+      position: relative;
+      strong {
+        font-size: 47px;
+        position: absolute;
+        bottom: 100px;
+        pointer-events: none;
+        color: white;
+        span {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .map-wrapper {
+    width: 100%;
+    height: 500px;
+    margin-top: 90px;
+    overflow: hidden;
+    background-color: beige;
+  }
+  .map-content {
+    width: 100%;
+    max-width: 1270px;
+    margin: 50px auto 0;
+    @include flexCenter();
+    justify-content: space-between;
+    align-items: flex-start;
+    div {
+      display: flex;
+      flex-direction: column;
+      p {
+        font-size: 23px;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+        pointer-events: none;
+      }
+      span {
+        display: block;
+        margin: 5px 0;
+        font-size: 21px;
+        color: black;
+        pointer-events: none;
       }
     }
   }
