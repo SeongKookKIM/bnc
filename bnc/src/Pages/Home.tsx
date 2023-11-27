@@ -1,20 +1,11 @@
 import React from "react";
+import HomeSlide from "../Components/HomeSlide";
 
 function Home() {
   return (
     <section className="home">
       <div className="home-banner">
-        <div className="home-banner-text">
-          <strong>
-            Complex Global <br />
-            Logistics Simplified
-          </strong>
-          <span>
-            Knowledgeable in all aspects of maritime regulations,{" "}
-            <br className="mobile" /> we offer complete ocean solutions for your
-            supply chain.
-          </span>
-        </div>
+        <HomeSlide />
       </div>
       <div className="inner">
         <div className="home-about">
