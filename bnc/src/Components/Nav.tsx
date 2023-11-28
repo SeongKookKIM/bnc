@@ -208,7 +208,7 @@ function Nav() {
                         changeLanguage("en");
                       }}
                     >
-                      EN
+                      English
                     </span>
                   </li>
                 </ul>

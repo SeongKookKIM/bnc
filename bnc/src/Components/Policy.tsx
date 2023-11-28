@@ -16,7 +16,7 @@ function Policy({ PolicyShow, setPolicyShow }: PolicyShowType) {
   return (
     <div className="policy">
       <span className="close" onClick={() => setPolicyShow(false)}>
-        X
+        ✕
       </span>
 
       <p>
