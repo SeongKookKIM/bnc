@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import { useNavigate } from "react-router-dom";
@@ -7,6 +7,7 @@ import i18n from "../Locales/i18n";
 
 function Nav() {
   const [menuActive, setMenuActive] = useState<number>(0);
+  const [navFixed, setNavFixed] = useState<string>("");
 
   // Translation
   const { t } = useTranslation();
@@ -15,10 +16,19 @@ function Nav() {
   const changeLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
   };
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY >= 10) {
+        setNavFixed("fixed");
+      } else {
+        setNavFixed("");
+      }
+    });
+  }, []);
 
   let navigate = useNavigate();
   return (
-    <div className="nav">
+    <div className={`nav ${navFixed}`}>
       <div className="nav-inner">
         {/* 로고박스 */}
         <div className="logo-box">
@@ -28,6 +38,7 @@ function Nav() {
             onClick={() => {
               navigate("/");
               setMenuActive(0);
+              window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           />
         </div>
@@ -39,6 +50,7 @@ function Nav() {
                 onClick={() => {
                   navigate("/about");
                   setMenuActive(1);
+                  window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
                 {t(`nav.introduction`)}
@@ -49,6 +61,7 @@ function Nav() {
                 onClick={() => {
                   navigate("/service");
                   setMenuActive(2);
+                  window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
                 {t(`nav.services`)}
@@ -59,16 +72,18 @@ function Nav() {
                 onClick={() => {
                   navigate("/inqury");
                   setMenuActive(3);
+                  window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
                 {t(`nav.quotes`)}
               </span>
             </li>
-            <li>
+            <li className={menuActive === 4 ? "active" : ""}>
               <span
                 onClick={() => {
                   navigate("/location");
                   setMenuActive(4);
+                  window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
               >
                 {t(`nav.contact`)}

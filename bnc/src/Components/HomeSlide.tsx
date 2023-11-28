@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import { useTranslation } from "react-i18next";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -13,55 +13,8 @@ import "swiper/css/pagination";
 import { EffectFade, Navigation, Autoplay } from "swiper/modules";
 
 function HomeSlide() {
-  const firstVideoRef = useRef<HTMLVideoElement>(null);
-  const secondVideoRef = useRef<HTMLVideoElement>(null);
-  const thirdVideoRef = useRef<HTMLVideoElement>(null);
-  const fourVideoRef = useRef<HTMLVideoElement>(null);
-
-  let firstVideoElement = firstVideoRef && firstVideoRef.current;
-  let secondVideoElement = secondVideoRef && secondVideoRef.current;
-  let thirdVideoElement = thirdVideoRef && thirdVideoRef.current;
-  let fourVideoElement = fourVideoRef && fourVideoRef.current;
-
   // Translation
   const { t } = useTranslation();
-
-  const handleSlideChange = (swiper: any) => {
-    // let myVideo = document.querySelector(".myVideo");
-    // setSlideNum(swiper.realIndex);
-    // Swiper 1번
-    if (swiper.realIndex === 0) {
-      if (firstVideoElement) {
-        firstVideoElement?.load();
-      }
-    } else {
-      firstVideoElement?.pause();
-    }
-    // Swiper 2번
-    if (swiper.realIndex === 1) {
-      if (secondVideoElement) {
-        secondVideoElement?.load();
-      }
-    } else {
-      secondVideoElement?.pause();
-    }
-    // Swiper 3번
-    if (swiper.realIndex === 2) {
-      if (thirdVideoElement) {
-        thirdVideoElement?.load();
-      }
-    } else {
-      thirdVideoElement?.pause();
-    }
-    // Swiper 4번
-    if (swiper.realIndex === 3) {
-      if (fourVideoElement) {
-        fourVideoElement?.load();
-      }
-    } else {
-      fourVideoElement?.pause();
-    }
-  };
 
   return (
     <>
@@ -71,10 +24,9 @@ function HomeSlide() {
         navigation={true}
         loop={false}
         autoplay={{
-          delay: 4000,
+          delay: 5000,
           disableOnInteraction: false,
         }}
-        onSlideChange={handleSlideChange}
         modules={[EffectFade, Navigation, Autoplay]}
         className="mySwiper"
       >
@@ -86,7 +38,6 @@ function HomeSlide() {
             playsInline
             src="/assets/video/home-banner01.mp4"
             typeof="video/mp4"
-            ref={firstVideoRef}
           />
           <div className="swiper-bg"></div>
           <div className="home-banner-text">
@@ -99,15 +50,15 @@ function HomeSlide() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <video
+          {/* <video
             autoPlay
             muted
             loop
             playsInline
             src="/assets/video/home-banner02.mp4"
             typeof="video/mp4"
-            ref={secondVideoRef}
-          />
+          /> */}
+          <img src="/assets/image/home/home-banner02.jpg" alt="home" />
           <div className="swiper-bg"></div>
           <div className="home-banner-text">
             <strong>
@@ -129,7 +80,6 @@ function HomeSlide() {
             playsInline
             src="/assets/video/home-banner03.mp4"
             typeof="video/mp4"
-            ref={thirdVideoRef}
           />
           <div className="swiper-bg"></div>
           <div className="home-banner-text">
@@ -145,15 +95,16 @@ function HomeSlide() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <video
+          {/* <video
             autoPlay
             muted
             loop
             playsInline
             src="/assets/video/home-banner04.mp4"
             typeof="video/mp4"
-            ref={fourVideoRef}
-          />
+          /> */}
+          <img src="/assets/image/home/home-banner04.png" alt="home" />
+
           <div className="swiper-bg"></div>
           <div className="home-banner-text">
             <strong>
