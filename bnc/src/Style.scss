@@ -154,6 +154,8 @@ body.fixed {
                 --bs-btn-hover-bg: none;
                 --bs-btn-hover-border-color: none;
                 --bs-btn-focus-shadow-rgb: none;
+                --bs-btn-active-bg: none;
+                --bs-btn-disabled-bg: none;
                 border-radius: 0;
                 font-size: 17px;
                 font-weight: 500;
@@ -1529,7 +1531,7 @@ body.fixed {
       strong {
         font-size: 47px;
         position: absolute;
-        bottom: 100px;
+        bottom: 130px;
         pointer-events: none;
         color: white;
         @include desktop() {

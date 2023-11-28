@@ -21,8 +21,8 @@
   },
   "home-link": {
     "first": "Company Introduction",
-    "second": "Get a Quote",
-    "third": "Head Office Location 길"
+    "second": "Online Quote",
+    "third": "Head Office"
   },
   "partners": "With BNC LOGISTICS",
 
@@ -159,7 +159,6 @@
 
   "contact": {
     "title": "Contact",
-    "subtitle": "Would you like to use Enter with BNC Logistics?",
     "a": "Adress",
     "b": "RM 2102, 14, Mallijae-ro, Mapo-gu, Seoul, Republic of Korea",
     "c": "Phone",

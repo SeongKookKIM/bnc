@@ -9,10 +9,7 @@ function Map() {
       <div className="map-banner">
         <div className="map-banner-inner-bg"></div>
         <div className="map-banner-inner">
-          <strong>
-            {t(`contact.title`)} <br className="mobile" />
-            <span>{t(`contact.subtitle`)}</span>
-          </strong>
+          <strong>{t(`contact.title`)}</strong>
         </div>
       </div>
 
