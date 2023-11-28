@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import Nav from "./Components/Nav";
@@ -9,6 +9,13 @@ import Inqury from "./Pages/Inqury";
 import Map from "./Pages/Map";
 
 function App() {
+  function setScreenSize() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  }
+  useEffect(() => {
+    setScreenSize();
+  });
   return (
     <div className="App">
       <Nav />
