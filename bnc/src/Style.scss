@@ -78,9 +78,15 @@ body.fixed {
       justify-content: space-between;
       align-items: center;
       padding: 20px 0;
+      @include desktop() {
+        max-width: 1024px;
+      }
       .logo-box {
         width: 300px;
         cursor: pointer;
+        @include desktop() {
+          width: 250px;
+        }
         img {
           width: 100%;
           object-fit: cover;
@@ -109,6 +115,10 @@ body.fixed {
               height: 100%;
               padding: 20px 20px;
               color: white;
+              @include desktop() {
+                font-size: 15px;
+                padding: 14px 18px;
+              }
             }
             .dropdown {
               width: 100%;
@@ -126,6 +136,10 @@ body.fixed {
                 border-radius: 0;
                 font-size: 17px;
                 font-weight: 500;
+                @include desktop() {
+                  font-size: 15px;
+                  padding: 14px 18px;
+                }
                 &:hover {
                   color: white;
                   background-color: transparent;
@@ -143,6 +157,9 @@ body.fixed {
                   &:hover {
                     background-color: $logoColor;
                     color: white;
+                  }
+                  @include desktop() {
+                    font-size: 15px;
                   }
                 }
               }
@@ -200,14 +217,23 @@ body.fixed {
           z-index: 9;
           transition: 1s;
           opacity: 0;
+          @include desktop() {
+            max-width: 1024px;
+          }
           strong {
             font-size: 47px;
             color: white;
+            @include desktop() {
+              font-size: 43px;
+            }
           }
           span {
             font-size: 20px;
             font-weight: 600;
             color: white;
+            @include desktop() {
+              font-size: 19px;
+            }
           }
         }
       }
@@ -222,6 +248,9 @@ body.fixed {
       .swiper-button-next {
         color: white;
         transform: scale(0.7);
+        @include desktop() {
+          transform: scale(0.5);
+        }
       }
     }
   }
@@ -229,11 +258,17 @@ body.fixed {
     width: 100%;
     max-width: 1270px;
     margin: 0 auto;
+    @include desktop() {
+      max-width: 1024px;
+    }
     .home-about {
       width: 100%;
       margin-top: 50px;
       border-top: 5px solid black;
       padding-top: 30px;
+      @include desktop() {
+        border-top: 4px solid black;
+      }
       h3 {
         width: 100%;
         font-size: 32px;
@@ -242,6 +277,9 @@ body.fixed {
         align-items: center;
         color: #001c51;
         pointer-events: none;
+        @include desktop() {
+          font-size: 30px;
+        }
       }
       .home-about-content-box {
         width: 100%;
@@ -249,12 +287,20 @@ body.fixed {
         display: flex;
         justify-content: flex-end;
         gap: 50px;
+        @include desktop() {
+          margin-top: 50px;
+          justify-content: flex-start;
+        }
         .home-about-content {
           width: 400px;
+
           p {
             font-size: 20px;
             line-height: 33px;
             pointer-events: none;
+            @include desktop() {
+              font-size: 18px;
+            }
           }
         }
       }
@@ -269,6 +315,10 @@ body.fixed {
       grid-gap: 20px;
       justify-content: space-between;
       align-content: space-between;
+      @include desktop() {
+        grid-template-columns: repeat(2, 490px);
+        grid-template-rows: repeat(2, 240px);
+      }
       .home-introduction {
         grid-row: 1/3;
       }
@@ -292,6 +342,9 @@ body.fixed {
           left: 20px;
           color: white;
           transition: 0.3s;
+          @include desktop() {
+            font-size: 20px;
+          }
         }
       }
       .home-introduction {
@@ -316,6 +369,10 @@ body.fixed {
       p {
         font-size: 32px;
         font-weight: 600;
+        @include desktop() {
+          font-size: 30px;
+          font-weight: 500;
+        }
       }
       ul {
         width: 100%;
@@ -346,6 +403,9 @@ body.fixed {
       center no-repeat;
     background-size: cover;
     position: relative;
+    @include desktop() {
+      height: 270px;
+    }
     .about-banner-inner-bg {
       width: 100%;
       height: 100%;
@@ -360,12 +420,19 @@ body.fixed {
       max-width: 1270px;
       margin: 0 auto;
       position: relative;
+      @include desktop() {
+        max-width: 1024px;
+      }
       strong {
         font-size: 47px;
         position: absolute;
         bottom: 130px;
         pointer-events: none;
         color: white;
+        @include desktop() {
+          font-size: 35px;
+          bottom: 50px;
+        }
       }
     }
   }
@@ -373,6 +440,9 @@ body.fixed {
     width: 100%;
     max-width: 1270px;
     margin: 0 auto;
+    @include desktop() {
+      max-width: 1024px;
+    }
     .about-inner-title {
       width: 100%;
       margin-top: 50px;
@@ -381,12 +451,18 @@ body.fixed {
       display: flex;
       flex-direction: column;
       gap: 0px;
+      @include desktop() {
+        border-top: 4px solid black;
+      }
       p {
         font-size: 20px;
         font-weight: 400;
         pointer-events: none;
         color: black;
         line-height: 37px;
+        @include desktop() {
+          font-size: 19px;
+        }
       }
     }
     .about-introduction-box {
@@ -396,13 +472,16 @@ body.fixed {
       display: flex;
       justify-content: space-between;
       align-items: center;
+
       .introduction {
         width: 48%;
         height: 100%;
         .introduction-image {
           width: 100%;
           height: 400px;
-          background-color: beige;
+          @include desktop() {
+            height: 350px;
+          }
           img {
             width: 100%;
             height: 100%;
@@ -412,12 +491,16 @@ body.fixed {
         .introduction-content-wrapper {
           width: 100%;
           height: 50%;
+
           strong {
             display: block;
             font-size: 32px;
             color: $logoColor;
             pointer-events: none;
             padding: 15px 0px;
+            @include desktop() {
+              font-size: 30px;
+            }
           }
           .introduction-content {
             display: flex;
@@ -440,7 +523,7 @@ body.fixed {
   }
   .about-customer {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 90px;
     .about-customer-box.first {
       background-color: #d4f1fe;
     }
@@ -470,6 +553,9 @@ body.fixed {
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
+        @include desktop() {
+          max-width: 1024px;
+        }
 
         .customer-content {
           width: 45%;
@@ -478,7 +564,10 @@ body.fixed {
             font-size: 32px;
             color: #001c51;
             pointer-events: none;
-            padding: 15px 0px;
+            padding: 0px 0px 15px;
+            @include desktop() {
+              font-size: 30px;
+            }
           }
           .about-content {
             display: flex;
@@ -513,11 +602,17 @@ body.fixed {
     height: 350px;
     background-color: beige;
     margin-top: 90px;
+    @include desktop() {
+      height: 300px;
+    }
     .about-contact-inner {
       width: 100%;
       height: 100%;
       max-width: 1270px;
       margin: 0 auto;
+      @include desktop() {
+        max-width: 1024px;
+      }
       .contact-content {
         strong {
           display: block;
@@ -525,11 +620,18 @@ body.fixed {
           color: black;
           padding: 70px 0 10px 0;
           pointer-events: none;
+          @include desktop() {
+            font-size: 35px;
+            padding: 40px 0 10px 0;
+          }
         }
         p {
           font-size: 20px;
           color: black;
           pointer-events: none;
+          @include desktop() {
+            font-size: 18px;
+          }
         }
         button {
           font-size: 20px;
@@ -540,6 +642,10 @@ body.fixed {
           font-family: $font;
           padding: 6px 20px;
           cursor: pointer;
+          @include desktop() {
+            font-size: 18px;
+            padding: 5px 17px;
+          }
         }
       }
     }
@@ -556,6 +662,9 @@ body.fixed {
       no-repeat;
     background-size: cover;
     position: relative;
+    @include desktop() {
+      height: 270px;
+    }
     .service-banner-inner-bg {
       width: 100%;
       height: 100%;
@@ -570,12 +679,19 @@ body.fixed {
       max-width: 1270px;
       margin: 0 auto;
       position: relative;
+      @include desktop() {
+        max-width: 1024px;
+      }
       strong {
         font-size: 47px;
         position: absolute;
         bottom: 130px;
         pointer-events: none;
         color: white;
+        @include desktop() {
+          font-size: 35px;
+          bottom: 50px;
+        }
       }
     }
   }
@@ -584,6 +700,9 @@ body.fixed {
     max-width: 1270px;
     margin: 0 auto;
     padding: 50px 0;
+    @include desktop() {
+      max-width: 1024px;
+    }
     h3 {
       width: 100%;
       font-size: 32px;
@@ -591,12 +710,20 @@ body.fixed {
       display: flex;
       align-items: center;
       color: #001c51;
+      pointer-events: none;
+      @include desktop() {
+        font-size: 30px;
+      }
     }
     p {
       font-size: 20px;
       line-height: 33px;
       color: black;
       padding: 20px 0;
+      pointer-events: none;
+      @include desktop() {
+        font-size: 19px;
+      }
     }
   }
   .service-customer {
@@ -619,6 +746,9 @@ body.fixed {
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
+        @include desktop() {
+          max-width: 1024px;
+        }
 
         .customer-content {
           width: 45%;
@@ -627,7 +757,10 @@ body.fixed {
             font-size: 32px;
             color: #001c51;
             pointer-events: none;
-            padding: 15px 0px;
+            padding: 0px 0px 15px;
+            @include desktop() {
+              font-size: 30px;
+            }
           }
           .service-content {
             display: flex;
@@ -668,6 +801,9 @@ body.fixed {
       no-repeat;
     background-size: cover;
     position: relative;
+    @include desktop() {
+      height: 270px;
+    }
     .inqury-banner-inner-bg {
       width: 100%;
       height: 100%;
@@ -682,12 +818,19 @@ body.fixed {
       max-width: 1270px;
       margin: 0 auto;
       position: relative;
+      @include desktop() {
+        max-width: 1024px;
+      }
       strong {
         font-size: 47px;
         position: absolute;
         bottom: 130px;
         pointer-events: none;
         color: white;
+        @include desktop() {
+          font-size: 35px;
+          bottom: 50px;
+        }
       }
     }
   }
@@ -696,10 +839,16 @@ body.fixed {
     max-width: 1270px;
     margin: 0 auto;
     padding: 50px 0;
+    @include desktop() {
+      max-width: 1024px;
+    }
     strong {
       font-size: 32px;
       pointer-events: none;
       color: #001c51;
+      @include desktop() {
+        font-size: 30px;
+      }
     }
     form {
       width: 100%;
@@ -712,6 +861,9 @@ body.fixed {
         font-size: 18px;
         font-weight: 500;
         color: #999;
+        @include desktop() {
+          font-size: 16px;
+        }
         span {
           color: red;
         }
@@ -773,10 +925,17 @@ body.fixed {
             input {
               width: 15px;
               height: 15px;
+              @include desktop() {
+                width: 14px;
+                height: 14px;
+              }
             }
             span {
               font-size: 16px;
               font-weight: 600;
+              @include desktop() {
+                font-size: 15px;
+              }
             }
           }
         }
@@ -807,6 +966,10 @@ body.fixed {
         input {
           width: 15px;
           height: 15px;
+          @include desktop() {
+            width: 14px;
+            height: 14px;
+          }
         }
         p {
           font-size: 16px;
@@ -818,6 +981,9 @@ body.fixed {
             color: #36579e;
             text-decoration: underline;
           }
+          @include desktop() {
+            font-size: 15px;
+          }
         }
         span {
           font-size: 16px;
@@ -828,6 +994,9 @@ body.fixed {
           &:hover {
             color: #36579e;
             text-decoration: underline;
+          }
+          @include desktop() {
+            font-size: 15px;
           }
         }
         .policy {
@@ -869,6 +1038,10 @@ body.fixed {
         background-color: #999;
         color: white;
         padding: 15px 80px;
+        @include desktop() {
+          font-size: 16px;
+          padding: 13px 60px;
+        }
       }
     }
   }
@@ -884,6 +1057,9 @@ body.fixed {
       no-repeat;
     background-size: cover;
     position: relative;
+    @include desktop() {
+      height: 270px;
+    }
     .map-banner-inner-bg {
       width: 100%;
       height: 100%;
@@ -898,14 +1074,29 @@ body.fixed {
       max-width: 1270px;
       margin: 0 auto;
       position: relative;
+      @include desktop() {
+        max-width: 1024px;
+      }
       strong {
         font-size: 47px;
         position: absolute;
         bottom: 100px;
         pointer-events: none;
         color: white;
+        @include desktop() {
+          font-size: 35px;
+          bottom: 50px;
+          display: flex;
+          flex-direction: column;
+          .mobile {
+            display: none;
+          }
+        }
         span {
           font-size: 20px;
+          @include desktop() {
+            font-size: 18px;
+          }
         }
       }
     }
@@ -913,11 +1104,13 @@ body.fixed {
   .map-wrapper {
     width: 100%;
     max-width: 1270px;
-
     height: 500px;
     margin: 90px auto 0;
     overflow: hidden;
     background-color: beige;
+    @include desktop() {
+      max-width: 1024px;
+    }
   }
   .map-content {
     width: 100%;
@@ -926,6 +1119,9 @@ body.fixed {
     @include flexCenter();
     justify-content: space-between;
     align-items: flex-start;
+    @include desktop() {
+      max-width: 1024px;
+    }
     div {
       display: flex;
       flex-direction: column;
@@ -935,6 +1131,9 @@ body.fixed {
         margin: 0;
         padding: 0;
         pointer-events: none;
+        @include desktop() {
+          font-size: 20px;
+        }
       }
       span {
         display: block;
@@ -942,6 +1141,9 @@ body.fixed {
         font-size: 21px;
         color: black;
         pointer-events: none;
+        @include desktop() {
+          font-size: 16px;
+        }
       }
     }
   }
@@ -961,6 +1163,9 @@ body.fixed {
     flex-direction: column;
     gap: 10px;
     pointer-events: none;
+    @include desktop() {
+      max-width: 1024px;
+    }
     h1 {
       font-size: 18px;
       color: white;

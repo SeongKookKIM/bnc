@@ -6,7 +6,7 @@ function Map() {
         <div className="map-banner-inner-bg"></div>
         <div className="map-banner-inner">
           <strong>
-            VISIT US <br />
+            VISIT US <br className="mobile" />
             <span>BNC LOGISTICS와 함께 하시겠습니까?</span>
           </strong>
         </div>
