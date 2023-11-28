@@ -9,6 +9,18 @@ function Nav() {
   const [menuActive, setMenuActive] = useState<number>(0);
   const [navFixed, setNavFixed] = useState<string>("");
 
+  // 햄버거메뉴
+  const [show, setShow] = useState<boolean>(false);
+
+  const handleClose = () => {
+    setShow(false);
+    document.querySelector("body")?.classList.remove("fixed");
+  };
+  const handleShow = () => {
+    setShow(true);
+    document.querySelector("body")?.classList.add("fixed");
+  };
+
   // Translation
   const { t } = useTranslation();
 
@@ -110,6 +122,88 @@ function Nav() {
             </li>
           </ul>
         </nav>
+        <div className="hambeger-menu">
+          <div className="hamberger-bar" onClick={handleShow}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        {show && (
+          <div className="hamberger-gnb">
+            <div className="hamberger-inner">
+              <div className="close-btn">
+                <span className="close" onClick={handleClose}>
+                  ✕
+                </span>
+              </div>
+              <div className="hamberger-menu-box">
+                <ul>
+                  <li>
+                    <span
+                      onClick={() => {
+                        navigate("/about");
+                        setShow(false);
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
+                    >
+                      {t(`nav.introduction`)}
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      onClick={() => {
+                        navigate("/service");
+                        setShow(false);
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
+                    >
+                      {t(`nav.services`)}
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      onClick={() => {
+                        navigate("/inqury");
+                        setShow(false);
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
+                    >
+                      {t(`nav.quotes`)}
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      onClick={() => {
+                        navigate("/location");
+                        setShow(false);
+                        window.scrollTo({ top: 0, behavior: "smooth" });
+                      }}
+                    >
+                      {t(`nav.contact`)}
+                    </span>
+                  </li>
+                  <li className="hamberger-lan">
+                    <span
+                      onClick={() => {
+                        changeLanguage("ko");
+                      }}
+                    >
+                      한국어
+                    </span>
+                    <span
+                      onClick={() => {
+                        changeLanguage("en");
+                      }}
+                    >
+                      EN
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
