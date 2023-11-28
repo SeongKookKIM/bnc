@@ -1,8 +1,11 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Policy from "../Components/Policy";
+import { useTranslation } from "react-i18next";
 
 function Inqury() {
+  const { t } = useTranslation();
+
   const [name, setName] = useState<string>("");
   const [phone, setPhone] = useState<string>("");
   const [email, setEmail] = useState<string>("");
@@ -58,12 +61,12 @@ function Inqury() {
       <div className="inqury-banner">
         <div className="inqury-banner-inner-bg"></div>
         <div className="inqury-banner-inner">
-          <strong>Request a Quote</strong>
+          <strong>{t(`quote.title`)}</strong>
         </div>
       </div>
       {/* 견적요청 폼 */}
       <div className="inqury-inner">
-        <strong>견적요청</strong>
+        <strong>{t(`quote.content.a`)}</strong>
         <form
           ref={formRef}
           onSubmit={(e) => {
@@ -72,7 +75,8 @@ function Inqury() {
         >
           <div className="name">
             <label>
-              <span>*</span>담당자 성함
+              <span>*</span>
+              {t(`quote.content.b`)}
             </label>
             <input
               type="text"
@@ -84,7 +88,8 @@ function Inqury() {
           </div>
           <div className="phone">
             <label>
-              <span>*</span>핸드폰 번호
+              <span>*</span>
+              {t(`quote.content.c`)}
             </label>
             <input
               type="number"
@@ -96,7 +101,8 @@ function Inqury() {
           </div>
           <div className="email">
             <label>
-              <span>*</span>이메일
+              <span>*</span>
+              {t(`quote.content.d`)}
             </label>
             <input
               type="email"
@@ -107,11 +113,11 @@ function Inqury() {
             ></input>
           </div>
           <div className="hs-code">
-            <label>HS CODE</label>
+            <label>{t(`quote.content.e`)}</label>
             <input type="text" name="hscode" />
           </div>
           <div className="delivery">
-            <label>운송방법</label>
+            <label>{t(`quote.content.f`)}</label>
             <div className="delivery-box">
               <div>
                 <input
@@ -146,7 +152,7 @@ function Inqury() {
             </div>
           </div>
           <div className="container">
-            <label>운송형태</label>
+            <label>{t(`quote.content.g`)}</label>
             <div className="container-box">
               <div>
                 <input
@@ -185,7 +191,8 @@ function Inqury() {
 
           <div className="subject">
             <label>
-              <span>*</span>문의제목
+              <span>*</span>
+              {t(`quote.content.h`)}
             </label>
             <input
               type="text"
@@ -195,7 +202,8 @@ function Inqury() {
           </div>
           <div className="message">
             <label>
-              <span>*</span>문의내용
+              <span>*</span>
+              {t(`quote.content.i`)}
             </label>
             <textarea
               name="message"
@@ -212,8 +220,10 @@ function Inqury() {
               checked={agree}
               onChange={() => setAgree(!agree)}
             />
-            <p onClick={() => setAgree(!agree)}>I Agree to the Terms of the</p>
-            <span onClick={() => setPolicyShow(true)}>Privacy Policy</span>
+            <p onClick={() => setAgree(!agree)}>{t(`quote.content.j`)}</p>
+            <span onClick={() => setPolicyShow(true)}>
+              {t(`quote.content.k`)}
+            </span>
             {policyShow && (
               <Policy PolicyShow={policyShow} setPolicyShow={setPolicyShow} />
             )}
@@ -234,10 +244,10 @@ function Inqury() {
               type="submit"
               style={{ pointerEvents: "none", opacity: "0.3" }}
             >
-              SEND
+              {t(`quote.content.l`)}
             </button>
           ) : (
-            <button type="submit">SEND</button>
+            <button type="submit">{t(`quote.content.l`)}</button>
           )}
         </form>
       </div>

@@ -1,4 +1,8 @@
+import { useTranslation } from "react-i18next";
+
 function Map() {
+  const { t } = useTranslation();
+
   return (
     <div className="map">
       {/* MAP 배너 */}
@@ -6,8 +10,8 @@ function Map() {
         <div className="map-banner-inner-bg"></div>
         <div className="map-banner-inner">
           <strong>
-            VISIT US <br className="mobile" />
-            <span>BNC LOGISTICS와 함께 하시겠습니까?</span>
+            {t(`contact.title`)} <br className="mobile" />
+            <span>{t(`contact.subtitle`)}</span>
           </strong>
         </div>
       </div>
@@ -24,19 +28,17 @@ function Map() {
       {/* 지도 내용 */}
       <div className="map-content">
         <div className="adress">
-          <p>주소</p>
-          <span>
-            서울특별시 마포구 만리재로 14, 2102호(공덕동,르네상스타워)
-          </span>
+          <p>{t(`contact.a`)}</p>
+          <span>{t(`contact.b`)}</span>
         </div>
         <div className="connect">
-          <p>연락처</p>
-          <span>대표 번호: +82-2-3272-5300</span>
-          <span>팩스: +82-2-3272-5455</span>
+          <p>{t(`contact.c`)}</p>
+          <span>{t(`contact.d`)}</span>
+          <span>{t(`contact.e`)}</span>
         </div>
         <div className="email">
-          <p>이메일</p>
-          <span>대표 이메일: info@bncl.co.kr</span>
+          <p>{t(`contact.f`)}</p>
+          <span>{t(`contact.g`)}</span>
         </div>
       </div>
     </div>

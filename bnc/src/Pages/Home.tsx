@@ -37,7 +37,13 @@ function Home() {
             }}
           >
             <div className="bg"></div>
-            <span>회사소개</span>
+            <p>
+              {t(`home-link.first`)}
+              <span className="sub">
+                The Best Logistic <br className="br" /> Partner for Your
+                Business
+              </span>
+            </p>
           </div>
           <div
             className="home-quotes"
@@ -47,7 +53,7 @@ function Home() {
             }}
           >
             <div className="bg"></div>
-            <span>견적요청</span>
+            <span>{t(`home-link.second`)}</span>
           </div>
           <div
             className="home-directions"
@@ -57,7 +63,7 @@ function Home() {
             }}
           >
             <div className="bg"></div>
-            <span>오시는길</span>
+            <span>{t(`home-link.third`)}</span>
           </div>
         </div>
 

@@ -5,16 +5,170 @@
     "quotes": "QUOTES",
     "contact": "CONTACT"
   },
+
   "home-banner": {
     "first": {
-      "title-first": "BNC Logistics",
-      "sub-title-first": "Global No.1 Freight Forwarding Company",
-      "sub-title-second": "with BNC AMERICA (subsidiary)"
+      "title-first": "International Export & Import",
+      "title-second": "Freight Forwarder, Logistic Company",
+      "sub-title-first": "Established in 2001 with the slogan of Sincere and Accurate Service,",
+      "sub-title-second": "we have achieved depth and substance growth not only as a freight forwarder but also as a current total Global Logistics Company."
     }
   },
   "home-introduction": {
-    "title": "The Best Price, Quick and Accurate Response",
-    "first": "We act as an agent for import and export cargo for large and small companies at home and abroad, and through a comprehensive system equipped with customs clearance, bonded transportation and bonded warehouse, and skilled employees with various experiences, we meet and satisfy customer needs with prompt and accurate replies and the best prices.",
-    "second": "We are fully prepared to drill. By becoming a second employee to companies, we aim to reduce logistics resources and provide accurate and safe services. In the future, we will continue to strive to reduce logistics costs for our customers by improving short-term delivery and efficiency, and will develop into a company that always puts customers first through honesty, trust, and creative customer service."
+    "title": "Fast and Accurate Logistics Problem Solvers with the Best Price",
+    "first": "From large domestic/overseas corportaions to small and medium-sized corporations, we provided a collective system with customs clearance, transportation, and warehouses. Through experienced employees with diverse experience, we are fully prepared to meet and satisfy our customers' needs with rapid and accurate service delivery and best price.",
+    "second": "For corporations, we are willing to become another employee to reduce logistics resources and provide accurate and safe services."
+  },
+  "home-link": {
+    "first": "Company Introduction",
+    "second": "Get a Quote",
+    "third": "Head Office Location 길"
+  },
+
+  "about": {
+    "title": "About BNC Logistics",
+    "title-first": "Established in 2001, BNC Logistics aims to provide efficient high quality service for its customers. BNC Logistics is a leader in a customer satisfaction through it's competitive freight and professionalized systematic working processing. It is able to build customers' confidence based on it's accumulated know-how, expertise and efficient high quality service. Therefore, BNC Logistics is continuously maintaining and expanding its business with domestic/foreign major companies.",
+    "title-second": "Our top priority is to continue to provide best quality service for our clients and our policy always aims at achieving the highest level of customer satisfaction. In the futuer, we are confidence that BNC Logistics will remain as a `trustworthy partner` to our clients by providing of optimal service",
+    "title-third": "Furthermore, We are developing various optimization IT solutions and also automaing complex logistic processes by recruiting talented co-worker from major IT companies.",
+    "network": {
+      "title": "Broad Ocean Carriers Network",
+      "content-first": "Not only BNC Logistics representative had experience from major shipping company(Hanjin Shipping), but also other executives and employees are from various major general trading company. We have a network with all shipping companies around the world and we support all possible schedules focused on our customers.",
+      "content-second": "We are not complacent about this and maintain the network by always finding ways to cooperate with shipping managers to make win-win position each other. BNC Logistics promises to support the best service with a variety of schedules and reasonable prices that meet the needs of clients."
+    },
+    "america": {
+      "title": "BNC AMERICA Corporate",
+      "content-first": "In February 2024, a subsidiary of BNC Logistics' north american corporation called BNC AMERICA, were established to develop logistics business across North America, including the United States.",
+      "content-second": "It directly manages on-site freights imported into the United States and manages various services such as customs clearance, shuttles, and storage.",
+      "content-third": "It also actively utilizes the global network to support exports from the United States with 4,510 overseas partners in 260 countries and 698 capitals.",
+      "content-four": "Through agile cooperation between the Korean headquarter and the America corporation, we are expanding our role as a Global Logistics Problem Solver."
+    },
+    "content": {
+      "first": {
+        "title": "Creative and Optimized Method Proposal",
+        "first": "For the first time in Korea, BNC Logistics carried out non-bulk container transportation for steel and power cables. Creatively proposed an export method that fits the cargo, predicted various variables, and responded preemptively.",
+        "second": "In addition, when the Gwangyang Port, located on the Asian arterial route connecting North America and Europe, was launched in 2011, BNC Logistics actively took advantage of the new port and had honor to achieve the largest volume carrier of the Gwangyang Port.",
+        "third": "From the very first contact clients will have with our sales or customer service teams, clients will notice that our people ask a lot of questions. This is because they are deeply interested in how you do business. That curiosity continues with our operations people as well. This approach doesn’t stop at our borders – all of our network partners are carefully vetted to be like-minded. Through BNC Logistics' customized approach, we can make a real difference in your logistics processes. "
+      },
+      "second": {
+        "title": "Trade & Logistic Consulting and Education",
+        "first": "We actively support consulting on trade/export/import from cargo classified as dangerous goods to all ordinary cargoes.",
+        "second": "We are supporting basic trade and logistics lectures for our customers. From new employees to experienced employees who are not familiar with the field, we are willing to help and pass on our know-how. In some cases, we accompany logistic field site to support training.",
+        "third": "We will support clients as much as possible to let them become a trade/logistics expert through cooperation with BNC Logistics."
+      },
+      "third": {
+        "title": "Core Value",
+        "first": "Success by Performance is both a slogan and a method. Constant investment and focus on customer needs has brought us to where we are today and will continue to carry us into the future.",
+        "second": "Teamwork is key. By trusting our employees and encouraging collaboration, we give them the tools and resources they need for success. BNC people tend to stick around longer because of our positive and efficient culture. We are doing our best to help our executives and employees grow as well as our company's growth, and we are always listening and being with consideration and respect.",
+        "third": "We are fiscally responsible and believe that financial stability is the right of our customers and employees. Your cargo and their jobs will never be at risk due to bad financial planning or reckless decisions. BNC Logistics is a family company that has been operated during two generations. we work hard to keep the same family values and ethics that we have always had."
+      }
+    }
+  },
+
+  "service": {
+    "title": "Service",
+    "service-title": "Various Experiences and Global Logistics Know-How",
+    "service-sub-title": "Partnerships are established with all countries to support our clients with all-in-one logistics services such as ocean & air freight, customs clearance, trucking, storage, etc.. We are willing to help our clients' successful business. All services are available without any regional exceptions.",
+    "content": {
+      "first": {
+        "title": "Ocean freight (Export, Import)",
+        "first": "BNC Logistics is not only speialize in handling export, import service in most professional; dependable and prompt way but also has excellent network with several ocaean carriers throughout the world.",
+        "second": "This provides us to provide customized solutions based on specific customers needs without unnecessary delay"
+      },
+      "second": {
+        "title": "Air freight (Export, Import)",
+        "first": "BNC Logistics has partnership contracts with leading agents around the world. We propose competitive fares through cooperation with serviceable airlines around the world. Our professionals and partners provide rapid service so that your precious cargo can be safely transported from the departure point to the destination with friendly and accurate business processing.",
+        "second": "We have organized a CFS warehouse and a transportation system including trucking at Incheon Airport's cargo terminal. We have established our own infrastructure from the storage and delivery of customs clearance and logistics warehouses. As a result, we can provide shippers convenient and inexpensive costs."
+      },
+      "third": {
+        "title": "Custom Clearing, Trucking, Warehouse-CFS ",
+        "first": "BNC Logistics offers wide variety type of services in order to help clients' import, export and customs clearances with updated customs regulations and procedures. We aim to provide the best quality service to clients that helps in avoding the delay in clearance and other detention. We also secure various vehicles and world-wide business network that needs to meet every client's demand in the are of various industrial bulk cargos and containers. Moreover, we have a contract with Kuls CFS and Dongbu CFS. They have a whole team of experienced technical experts who provide complete and effective manner of service without unnecessary delays. Through these services our clients not only have more control over their goods without worrying about the warehousing process but can also minimize the inventory costs."
+      },
+      "four": {
+        "title": "Bulk & Project",
+        "first": "Heavy cargoes that cannot be loaded in 20'/40' containers or special-purpose containers and special cargoes such as large volumes of cargo, vehicles, chemicals, and dangerous goods are loaded on bulk carriers and transported safely.",
+        "second": "Select the most appropriate transportation method for large and mass mechanical equipment cargo transportation. By providing all procedures of transportation as a one-stop service from start to finish, we respond quickly and accurately to any kind of transportation request our customers need."
+      },
+      "five": {
+        "title": "Intermediary Trade",
+        "first": "As a form of indirect trade which is a trade carried out by third countries intervening between exporting and importing countries.",
+        "second": "Brokers in third countries become the subject of the transaction and have their own risks. It is a trade method that connects countries that need trading from the seller's point of view to the importer and from the buyer's point of view to the exporter."
+      }
+    }
+  },
+
+  "quote": {
+    "title": "Request a Quotes",
+    "content": {
+      "a": "Quotes",
+      "b": "Name",
+      "c": "Phone Number",
+      "d": "Email",
+      "e": "HS CODE",
+      "f": "Delivery Method",
+      "g": "Container Load",
+      "h": "Title",
+      "i": "Inquiry Details",
+      "j": "I Agree to the Terms of the",
+      "k": "Privacy Policy",
+      "l": "SEND"
+    }
+  },
+
+  "policy": {
+    "a": "BNC Logistics Co., Ltd. (hereinafter referred to as the 'Company') values your personal information and complies with the Act on Promotion of Information and Communication Network Utilization and Information Protection.",
+    "b": "The company uses the personal information provided by the client/customer through the personal information handling policy for what purpose and method,",
+    "b-a": "We would like to inform you of what methods are being taken to protect your personal information.",
+    "c": "Last changed date of personal information handling policy: 30th of November, 2023",
+    "d": "1. Purpose and use of personal information collection",
+    "e": "The company is collecting minimal information to provide a website service.",
+    "f": "All users' personal information may never be used for any purpose other than those stated, but we will definitely seek consent from the members if the purpose and use of the members' personal information are changed.",
+    "g": "2. Collected personal informations, retention, and duration of use",
+    "h": "1) The information that the company collects to provide various services is as follows.",
+    "i": "① Collections: Name, Contact, Email, Company Name",
+    "j": "② Method of collecting personal information: online quote inquiry, website field trip application, prize event application, fair and other business activities",
+    "k": "(2) When the company collects the user's personal information, it must obtain the user's consent.",
+    "l": "(3) In principle, the company destroys the personal information without delay after the purpose of collecting and using it has been achieved. However, if it is necessary to preserve it in accordance with the provisions of the relevant laws and regulations, the company shall keep the member information for a certain period prescribed by the relevant laws and regulations as follows.",
+    "m": "However, if it is necessary to preserve it in accordance with the provisions of the relevant laws and regulations, the company shall keep the member information for a certain period prescribed by the relevant laws and regulations as follows.",
+    "n": "① Retention Item: Name, Contact, Email, Company Name",
+    "o": "② Following law: [Act on Promotion of Information and Communication Network Utilization and Protection of Personal Information - Republic of Korea]",
+    "p": "③ Preservation period: 5 years",
+    "q": "3. Providing and sharing personal information",
+    "r": "In principle, the company does not provide users' personal information to the outside world. However, exceptions are made in the following cases.",
+    "s": "① If users have agreed in advance",
+    "t": "② Where there is a request from an investigative agency in accordance with the provisions of laws and regulations or in accordance with the procedures and methods prescribed by laws and regulations for the purpose of investigation",
+    "u": "③ Utilization of minimum user information (name, contact) necessary for business related to providing client/customer service",
+    "v": "④ Where a particular individual is provided in an unidentifiable form as necessary for statistical preparation, academic research or market research",
+    "w": "4. Rights of users and legal representatives and how to exercise them",
+    "x": "ⅰ) The Company shall obtain the consent of its legal representative when collecting personal information of children under the age of 14.",
+    "y": "ⅱ) The Company shall take necessary measures without delay when users request correction of errors in personal information or request deletion.",
+    "z": " The company processes personal information canceled or deleted at the request of the user in accordance with the `Period of Retention and Use of Personal Information Collected by the Company` and prevents it from being viewed or used for any other purpose.",
+    "aa": "* How to request deletion: E-mail, Fax, Phone",
+    "ab": "5. Entrustment of collected personal information",
+    "ac": "The company does not entrust your information to an external company without your consent. If such a need arises in the future, we will notify you of the entrusted person and the entrusted work and obtain prior consent if necessary.",
+    "ad": "|| in charge of management",
+    "ae": "Property: BNC Logistics Co., Ltd",
+    "af": "TEL : +82-2-3727-5450",
+    "email": "info@bncl.co.kr",
+    "ag": "If you need to report or consult about other personal information infringement, please contact the following institution.",
+    "ah": "1. Personal Dispute Mediation Committee (www.1336.or.kr/+82-1336)",
+    "ai": "2. Information Protection Mark Certification Committee (www.eprivacy.or.kr/+82-2-580-0533~4)",
+    "aj": "3. Internet Crime Investigation Center of the Supreme Prosecutors' Office (http://icic.sppo.go.kr/+82-2-3480-3600 )",
+    "ak": "4. Cyber Terrorism Response Center of the National Police Agency (www.ctrc.go.kr/+82-2-392-0330 )"
+  },
+
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Would you like to use Enter with BNC Logistics?",
+    "a": "Adress",
+    "b": "RM 2102, 14, Mallijae-ro, Mapo-gu, Seoul, Republic of Korea",
+    "c": "Phone",
+    "d": "Telephone: +82-2-3272-5300",
+    "e": "Fax: +82-2-3272-5455",
+    "f": "Email",
+    "g": "Email: info@bncl.co.kr"
+  },
+
+  "footer": {
+    "a": "BNC Logistics CO., LTD."
   }
 }

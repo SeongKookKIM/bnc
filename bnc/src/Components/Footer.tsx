@@ -1,10 +1,12 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation();
   return (
     <div className="footer">
       <div className="footer-inner">
-        <h1>(주)비엔씨로지스틱</h1>
+        <h1>{t(`footer.a`)}</h1>
         <div className="footer-section-box">
           <span>
             서울특별시 마포구 만리재로 14, 2102호(공덕동, 르네상스타워)
@@ -21,6 +23,7 @@ function Footer() {
           </span>
           <span>
             Tel. +82-2-3272-5300 Fax. +82-2-3272-5455 E-mail. info@bncl.co.kr{" "}
+            Business Registration Number: 105-86-21997
           </span>
         </div>
         <div className="footer-section-box">

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -41,7 +41,10 @@ function HomeSlide() {
           />
           <div className="swiper-bg"></div>
           <div className="home-banner-text">
-            <strong>{t(`home-banner.first.title-first`)}</strong>
+            <strong>
+              {t(`home-banner.first.title-first`)} <br />
+              {t(`home-banner.first.title-second`)}
+            </strong>
             <span>
               {t(`home-banner.first.sub-title-first`)}
               <br className="mobile" />{" "}
@@ -50,25 +53,17 @@ function HomeSlide() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          {/* <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            src="/assets/video/home-banner02.mp4"
-            typeof="video/mp4"
-          /> */}
           <img src="/assets/image/home/home-banner02.jpg" alt="home" />
           <div className="swiper-bg"></div>
           <div className="home-banner-text">
             <strong>
-              Complex Global <br />
-              Logistics Simplified
+              {t(`home-banner.first.title-first`)} <br />
+              {t(`home-banner.first.title-second`)}
             </strong>
             <span>
-              Knowledgeable in all aspects of maritime regulations,{" "}
-              <br className="mobile" /> we offer complete ocean solutions for
-              your supply chain.
+              {t(`home-banner.first.sub-title-first`)}
+              <br className="mobile" />{" "}
+              {t(`home-banner.first.sub-title-second`)}
             </span>
           </div>
         </SwiperSlide>
@@ -84,37 +79,29 @@ function HomeSlide() {
           <div className="swiper-bg"></div>
           <div className="home-banner-text">
             <strong>
-              Complex Global <br />
-              Logistics Simplified
+              {t(`home-banner.first.title-first`)} <br />
+              {t(`home-banner.first.title-second`)}
             </strong>
             <span>
-              Knowledgeable in all aspects of maritime regulations,{" "}
-              <br className="mobile" /> we offer complete ocean solutions for
-              your supply chain.
+              {t(`home-banner.first.sub-title-first`)}
+              <br className="mobile" />{" "}
+              {t(`home-banner.first.sub-title-second`)}
             </span>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          {/* <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            src="/assets/video/home-banner04.mp4"
-            typeof="video/mp4"
-          /> */}
           <img src="/assets/image/home/home-banner04.png" alt="home" />
 
           <div className="swiper-bg"></div>
           <div className="home-banner-text">
             <strong>
-              Complex Global <br />
-              Logistics Simplified
+              {t(`home-banner.first.title-first`)} <br />
+              {t(`home-banner.first.title-second`)}
             </strong>
             <span>
-              Knowledgeable in all aspects of maritime regulations,{" "}
-              <br className="mobile" /> we offer complete ocean solutions for
-              your supply chain.
+              {t(`home-banner.first.sub-title-first`)}
+              <br className="mobile" />{" "}
+              {t(`home-banner.first.sub-title-second`)}
             </span>
           </div>
         </SwiperSlide>
