@@ -69,24 +69,44 @@ function Home() {
 
         {/* 파트너 */}
         <div className="home-partners">
-          <p>BNC LOGITICS와 함께하는 그룹</p>
+          <p>{t(`partners`)}</p>
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>
+              <img src="/assets/image/home/partners/1.png" alt="1" />
+            </li>
+            <li>
+              <img src="/assets/image/home/partners/2.png" alt="2" />
+            </li>
+            <li>
+              <img src="/assets/image/home/partners/3.png" alt="3" />
+            </li>
+            <li>
+              <img src="/assets/image/home/partners/4.jpg" alt="4" />
+            </li>
+            <li>
+              <img src="/assets/image/home/partners/5.png" alt="5" />
+            </li>
+            <li>
+              <img src="/assets/image/home/partners/6.png" alt="6" />
+            </li>
+            <li>
+              <img src="/assets/image/home/partners/7.png" alt="7" />
+            </li>
+            <li>
+              <img src="/assets/image/home/partners/8.png" alt="8" />
+            </li>
+            <li>
+              <img src="/assets/image/home/partners/9.png" alt="9" />
+            </li>
+            <li>
+              <img src="/assets/image/home/partners/10.png" alt="10" />
+            </li>
+            <li>
+              <img src="/assets/image/home/partners/11.png" alt="11" />
+            </li>
+            <li>
+              <img src="/assets/image/home/partners/12.png" alt="12" />
+            </li>
           </ul>
         </div>
       </div>

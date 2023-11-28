@@ -25,7 +25,7 @@ function About() {
         <div className="about-introduction-box">
           <div className="network introduction">
             <div className="introduction-image">
-              <img src="/assets/image/about-network.jpg" alt="network" />
+              <img src="/assets/image/about/about-first.jpg" alt="network" />
             </div>
             <div className="introduction-content-wrapper">
               <strong>{t(`about.network.title`)}</strong>
@@ -37,7 +37,7 @@ function About() {
           </div>
           <div className="values introduction">
             <div className="introduction-image">
-              <img src="/assets/image/about-second.jpg" alt="value" />
+              <img src="/assets/image/about/about-second.jpg" alt="value" />
             </div>
             <div className="introduction-content-wrapper">
               <strong>{t(`about.america.title`)}</strong>
@@ -66,7 +66,7 @@ function About() {
               </div>
             </div>
             <div className="customer-image">
-              <img src="/assets/image/about-third.jpg" alt="about" />
+              <img src="/assets/image/about/03.jpg" alt="about" />
             </div>
           </div>
         </div>
@@ -82,7 +82,7 @@ function About() {
               </div>
             </div>
             <div className="customer-image">
-              <img src="/assets/image/about-third.jpg" alt="about" />
+              <img src="/assets/image/about/04.jpg" alt="about" />
             </div>
           </div>
         </div>
@@ -98,7 +98,7 @@ function About() {
               </div>
             </div>
             <div className="customer-image">
-              <img src="/assets/image/about-third.jpg" alt="about" />
+              <img src="/assets/image/about/05.jpg" alt="about" />
             </div>
           </div>
         </div>

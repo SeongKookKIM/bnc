@@ -11,19 +11,20 @@
       "title-first": "International Export & Import",
       "title-second": "Freight Forwarder, Logistic Company",
       "sub-title-first": "Established in 2001 with the slogan of Sincere and Accurate Service,",
-      "sub-title-second": "we have achieved depth and substance growth not only as a freight forwarder but also as a current total Global Logistics Company."
+      "sub-title-second": "We have achieved depth and substance growth not only as a freight forwarder but also as a General Global Logistics Company."
     }
   },
   "home-introduction": {
     "title": "Fast and Accurate Logistics Problem Solvers with the Best Price",
-    "first": "From large domestic/overseas corportaions to small and medium-sized corporations, we provided a collective system with customs clearance, transportation, and warehouses. Through experienced employees with diverse experience, we are fully prepared to meet and satisfy our customers' needs with rapid and accurate service delivery and best price.",
-    "second": "For corporations, we are willing to become another employee to reduce logistics resources and provide accurate and safe services."
+    "first": "From large domestic/oversea corportaions to small and medium-sized corporations, we provided a collective system with customs clearance, transportation, and warehouses. Through experienced employees with diverse experience, ",
+    "second": " we are fully prepared to meet and satisfy our customers' needs with rapid and accurate service delivery and best price. For corporations, we are willing to become another employee to reduce logistics resources and provide accurate and safe services."
   },
   "home-link": {
     "first": "Company Introduction",
     "second": "Get a Quote",
     "third": "Head Office Location 길"
   },
+  "partners": "With BNC LOGISTICS",
 
   "about": {
     "title": "About BNC Logistics",
@@ -32,11 +33,11 @@
     "title-third": "Furthermore, We are developing various optimization IT solutions and also automaing complex logistic processes by recruiting talented co-worker from major IT companies.",
     "network": {
       "title": "Broad Ocean Carriers Network",
-      "content-first": "Not only BNC Logistics representative had experience from major shipping company(Hanjin Shipping), but also other executives and employees are from various major general trading company. We have a network with all shipping companies around the world and we support all possible schedules focused on our customers.",
+      "content-first": "Not only BNC Logistics representative had experience from major shipping company(Hanjin Shipping), but also other executives and employees are from various major general trading company. We have a network with all shipping carriers around the world and we support all possible schedules focused on our customers.",
       "content-second": "We are not complacent about this and maintain the network by always finding ways to cooperate with shipping managers to make win-win position each other. BNC Logistics promises to support the best service with a variety of schedules and reasonable prices that meet the needs of clients."
     },
     "america": {
-      "title": "BNC AMERICA Corporate",
+      "title": "BNC AMERICA Corporation",
       "content-first": "In February 2024, a subsidiary of BNC Logistics' north american corporation called BNC AMERICA, were established to develop logistics business across North America, including the United States.",
       "content-second": "It directly manages on-site freights imported into the United States and manages various services such as customs clearance, shuttles, and storage.",
       "content-third": "It also actively utilizes the global network to support exports from the United States with 4,510 overseas partners in 260 countries and 698 capitals.",
@@ -65,7 +66,7 @@
   },
 
   "service": {
-    "title": "Service",
+    "title": "Services",
     "service-title": "Various Experiences and Global Logistics Know-How",
     "service-sub-title": "Partnerships are established with all countries to support our clients with all-in-one logistics services such as ocean & air freight, customs clearance, trucking, storage, etc.. We are willing to help our clients' successful business. All services are available without any regional exceptions.",
     "content": {
@@ -97,7 +98,7 @@
   },
 
   "quote": {
-    "title": "Request a Quotes",
+    "title": "Request a Quote",
     "content": {
       "a": "Quotes",
       "b": "Name",

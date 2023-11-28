@@ -24,17 +24,17 @@ function Inqury() {
     e.preventDefault();
 
     if (name === "") {
-      alert("담당자 성함을 입력해주세요.");
+      alert("담당자 성함을 입력해주세요 (Please enter the Name)");
     } else if (phone === "") {
-      alert("핸드폰 번호를 입력해주세요.");
+      alert("담당자 연락처를 입력해주세요 (Please enter the Phone Number.)");
     } else if (email === "") {
-      alert("이메일을 입력해주세요.");
+      alert("이메일을 입력해주세요 (Please enter the E-mail)");
     } else if (subject === "") {
-      alert("제목을 입력해주세요.");
+      alert("제목을 입력해주세요 (Please enter the Title)");
     } else if (message === "") {
-      alert("문의내용을 입력해주세요.");
+      alert("문의내용을 입력해주세요 (Please enter the Inquiry Details)");
     } else if (!agree) {
-      alert("정책에 동의해주세요.");
+      alert("정책에 동의해주세요 (Please check the Agreement)");
     } else {
       if (formRef.current) {
         emailjs
@@ -147,7 +147,7 @@ function Inqury() {
                   checked={selectedDelivery === "기타"}
                   onChange={() => setSelectedDelivery("기타")}
                 />
-                <span>기타</span>
+                <span>Others</span>
               </div>
             </div>
           </div>
@@ -184,7 +184,7 @@ function Inqury() {
                   checked={selectedContainer === "기타"}
                   onChange={() => setSelectedContainer("기타")}
                 />
-                <span>기타</span>
+                <span>Others</span>
               </div>
             </div>
           </div>

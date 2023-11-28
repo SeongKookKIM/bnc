@@ -643,9 +643,21 @@ body.fixed {
         li {
           width: 22%;
           aspect-ratio: 2/1;
-          background-color: beige;
           margin-bottom: 30px;
           overflow: hidden;
+          @include flexCenter();
+          &:nth-child(12),
+          &:nth-child(11) {
+            img {
+              width: auto;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
           @include tablet() {
             width: 30%;
           }
@@ -763,11 +775,11 @@ body.fixed {
     }
     .about-introduction-box {
       width: 100%;
-      height: 900px;
+      height: auto;
       margin-top: 90px;
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
       @include tablet() {
         height: auto;
         align-items: flex-start;
@@ -955,7 +967,7 @@ body.fixed {
   .service-banner {
     width: 100%;
     height: 420px;
-    background: url("../public/assets/image/about-banner.jpg") center center
+    background: url("../public/assets/image/service/banner.jpg") center center
       no-repeat;
     background-size: cover;
     position: relative;
@@ -1160,7 +1172,7 @@ body.fixed {
   .inqury-banner {
     width: 100%;
     height: 420px;
-    background: url("../public/assets/image/about-banner.jpg") center center
+    background: url("../public/assets/image/quotes/banner.jpg") center center
       no-repeat;
     background-size: cover;
     position: relative;
@@ -1480,7 +1492,7 @@ body.fixed {
   .map-banner {
     width: 100%;
     height: 420px;
-    background: url("../public/assets/image/about-banner.jpg") center center
+    background: url("../public/assets/image/map/banner.jpg") center center
       no-repeat;
     background-size: cover;
     position: relative;
