@@ -91,7 +91,7 @@ body.fixed {
         width: 90%;
       }
       @include mobile() {
-        padding: 10px 0;
+        padding: 15px 0;
       }
       .logo-box {
         width: 300px;
@@ -103,7 +103,7 @@ body.fixed {
           width: 220px;
         }
         @include mobile {
-          width: 140px;
+          width: 170px;
         }
         img {
           width: 100%;
@@ -202,8 +202,8 @@ body.fixed {
             gap: 5px;
             cursor: pointer;
             @include mobile() {
-              width: 30px;
-              height: 30px;
+              width: 37px;
+              height: 37px;
             }
             span {
               display: block;
