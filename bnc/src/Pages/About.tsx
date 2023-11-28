@@ -169,7 +169,9 @@ function About() {
                 </p>
               </div>
             </div>
-            <div className="customer-image"></div>
+            <div className="customer-image">
+              <img src="/assets/image/about-third.jpg" alt="about" />
+            </div>
           </div>
         </div>
         {/* Third */}
@@ -201,7 +203,9 @@ function About() {
                 </p>
               </div>
             </div>
-            <div className="customer-image"></div>
+            <div className="customer-image">
+              <img src="/assets/image/about-third.jpg" alt="about" />
+            </div>
           </div>
         </div>
       </div>

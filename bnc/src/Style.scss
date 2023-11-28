@@ -324,11 +324,19 @@ body.fixed {
           @include desktop() {
             max-width: 1024px;
           }
+          @include tablet() {
+            max-width: auto;
+            width: 90%;
+            top: 80%;
+          }
           strong {
             font-size: 47px;
             color: white;
             @include desktop() {
               font-size: 43px;
+            }
+            @include tablet() {
+              font-size: 38px;
             }
           }
           span {
@@ -337,6 +345,10 @@ body.fixed {
             color: white;
             @include desktop() {
               font-size: 19px;
+            }
+            @include tablet() {
+              font-size: 18px;
+              font-weight: 500;
             }
           }
         }
@@ -365,6 +377,10 @@ body.fixed {
     @include desktop() {
       max-width: 1024px;
     }
+    @include tablet() {
+      max-width: auto;
+      width: 90%;
+    }
     .home-about {
       width: 100%;
       margin-top: 50px;
@@ -372,6 +388,9 @@ body.fixed {
       padding-top: 30px;
       @include desktop() {
         border-top: 4px solid black;
+      }
+      @include tablet() {
+        border-top: 3px solid black;
       }
       h3 {
         width: 100%;
@@ -384,6 +403,9 @@ body.fixed {
         @include desktop() {
           font-size: 30px;
         }
+        @include tablet() {
+          font-size: 27px;
+        }
       }
       .home-about-content-box {
         width: 100%;
@@ -395,15 +417,23 @@ body.fixed {
           margin-top: 50px;
           justify-content: flex-start;
         }
+        @include tablet() {
+          justify-content: space-between;
+        }
         .home-about-content {
           width: 400px;
-
+          @include tablet() {
+            width: 45%;
+          }
           p {
             font-size: 20px;
             line-height: 33px;
             pointer-events: none;
             @include desktop() {
               font-size: 18px;
+            }
+            @include tablet() {
+              font-size: 16px;
             }
           }
         }
@@ -422,6 +452,11 @@ body.fixed {
       @include desktop() {
         grid-template-columns: repeat(2, 490px);
         grid-template-rows: repeat(2, 240px);
+      }
+      @include tablet() {
+        height: 450px;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 220px);
       }
       .home-introduction {
         grid-row: 1/3;
@@ -477,6 +512,9 @@ body.fixed {
           font-size: 30px;
           font-weight: 500;
         }
+        @include tablet() {
+          font-size: 27px;
+        }
       }
       ul {
         width: 100%;
@@ -491,6 +529,9 @@ body.fixed {
           aspect-ratio: 2/1;
           background-color: beige;
           margin-bottom: 30px;
+          @include tablet() {
+            width: 30%;
+          }
         }
       }
     }
@@ -510,6 +551,9 @@ body.fixed {
     @include desktop() {
       height: 270px;
     }
+    @include tablet() {
+      height: 200px;
+    }
     .about-banner-inner-bg {
       width: 100%;
       height: 100%;
@@ -527,6 +571,10 @@ body.fixed {
       @include desktop() {
         max-width: 1024px;
       }
+      @include tablet() {
+        max-width: auto;
+        width: 90%;
+      }
       strong {
         font-size: 47px;
         position: absolute;
@@ -537,6 +585,10 @@ body.fixed {
           font-size: 35px;
           bottom: 50px;
         }
+        @include tablet() {
+          font-size: 28px;
+          bottom: 20px;
+        }
       }
     }
   }
@@ -546,6 +598,10 @@ body.fixed {
     margin: 0 auto;
     @include desktop() {
       max-width: 1024px;
+    }
+    @include tablet() {
+      max-width: auto;
+      width: 90%;
     }
     .about-inner-title {
       width: 100%;
@@ -558,6 +614,9 @@ body.fixed {
       @include desktop() {
         border-top: 4px solid black;
       }
+      @include tablet() {
+        border-top: 3px solid black;
+      }
       p {
         font-size: 20px;
         font-weight: 400;
@@ -566,6 +625,9 @@ body.fixed {
         line-height: 37px;
         @include desktop() {
           font-size: 19px;
+        }
+        @include tablet() {
+          font-size: 18px;
         }
       }
     }
@@ -576,6 +638,10 @@ body.fixed {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @include tablet() {
+        height: auto;
+        align-items: flex-start;
+      }
 
       .introduction {
         width: 48%;
@@ -586,6 +652,9 @@ body.fixed {
           @include desktop() {
             height: 350px;
           }
+          @include tablet() {
+            height: 300px;
+          }
           img {
             width: 100%;
             height: 100%;
@@ -595,6 +664,9 @@ body.fixed {
         .introduction-content-wrapper {
           width: 100%;
           height: 50%;
+          @include tablet() {
+            height: auto;
+          }
 
           strong {
             display: block;
@@ -604,6 +676,9 @@ body.fixed {
             padding: 15px 0px;
             @include desktop() {
               font-size: 30px;
+            }
+            @include tablet() {
+              font-size: 25px;
             }
           }
           .introduction-content {
@@ -619,6 +694,9 @@ body.fixed {
               color: black;
               font-weight: 400;
               padding-right: 20px;
+              @include tablet() {
+                font-size: 14px;
+              }
             }
           }
         }
@@ -635,6 +713,9 @@ body.fixed {
       background-color: #001c51;
       .customer-inner {
         flex-direction: row-reverse;
+        @include tablet() {
+          flex-direction: column-reverse;
+        }
         .customer-content {
           strong {
             color: white;
@@ -660,9 +741,17 @@ body.fixed {
         @include desktop() {
           max-width: 1024px;
         }
+        @include tablet() {
+          max-width: auto;
+          width: 90%;
+          flex-direction: column-reverse;
+        }
 
         .customer-content {
           width: 45%;
+          @include tablet() {
+            width: 100%;
+          }
           strong {
             display: block;
             font-size: 32px;
@@ -671,6 +760,10 @@ body.fixed {
             padding: 0px 0px 15px;
             @include desktop() {
               font-size: 30px;
+            }
+            @include tablet() {
+              font-size: 25px;
+              padding: 15px 0;
             }
           }
           .about-content {
@@ -686,16 +779,23 @@ body.fixed {
               color: black;
               font-weight: 400;
               padding-right: 20px;
+              @include tablet() {
+                font-size: 14px;
+                padding: 0;
+              }
             }
           }
         }
         .customer-image {
           width: 45%;
-
+          background-color: beige;
           img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+          }
+          @include tablet() {
+            width: 100%;
           }
         }
       }
@@ -717,6 +817,10 @@ body.fixed {
       @include desktop() {
         max-width: 1024px;
       }
+      @include tablet() {
+        max-width: auto;
+        width: 90%;
+      }
       .contact-content {
         strong {
           display: block;
@@ -728,6 +832,9 @@ body.fixed {
             font-size: 35px;
             padding: 40px 0 10px 0;
           }
+          @include tablet() {
+            font-size: 28px;
+          }
         }
         p {
           font-size: 20px;
@@ -735,6 +842,9 @@ body.fixed {
           pointer-events: none;
           @include desktop() {
             font-size: 18px;
+          }
+          @include tablet() {
+            font-size: 16px;
           }
         }
         button {
@@ -749,6 +859,10 @@ body.fixed {
           @include desktop() {
             font-size: 18px;
             padding: 5px 17px;
+          }
+          @include tablet() {
+            font-size: 16px;
+            padding: 5px 13px;
           }
         }
       }
@@ -769,6 +883,9 @@ body.fixed {
     @include desktop() {
       height: 270px;
     }
+    @include tablet() {
+      height: 200px;
+    }
     .service-banner-inner-bg {
       width: 100%;
       height: 100%;
@@ -786,6 +903,10 @@ body.fixed {
       @include desktop() {
         max-width: 1024px;
       }
+      @include tablet() {
+        max-width: auto;
+        width: 90%;
+      }
       strong {
         font-size: 47px;
         position: absolute;
@@ -795,6 +916,10 @@ body.fixed {
         @include desktop() {
           font-size: 35px;
           bottom: 50px;
+        }
+        @include tablet() {
+          font-size: 28px;
+          bottom: 20px;
         }
       }
     }
@@ -807,6 +932,10 @@ body.fixed {
     @include desktop() {
       max-width: 1024px;
     }
+    @include tablet() {
+      max-width: auto;
+      width: 90%;
+    }
     h3 {
       width: 100%;
       font-size: 32px;
@@ -818,6 +947,9 @@ body.fixed {
       @include desktop() {
         font-size: 30px;
       }
+      @include tablet() {
+        font-size: 27px;
+      }
     }
     p {
       font-size: 20px;
@@ -828,6 +960,9 @@ body.fixed {
       @include desktop() {
         font-size: 19px;
       }
+      @include tablet() {
+        font-size: 18px;
+      }
     }
   }
   .service-customer {
@@ -837,7 +972,7 @@ body.fixed {
     .service-customer-box.second,
     .service-customer-box.four {
       .customer-inner {
-        flex-direction: row-reverse;
+        flex-direction: column-reverse;
       }
     }
 
@@ -853,9 +988,17 @@ body.fixed {
         @include desktop() {
           max-width: 1024px;
         }
+        @include tablet() {
+          max-width: auto;
+          width: 90%;
+          flex-direction: column-reverse;
+        }
 
         .customer-content {
           width: 45%;
+          @include tablet() {
+            width: 100%;
+          }
           strong {
             display: block;
             font-size: 32px;
@@ -864,6 +1007,10 @@ body.fixed {
             padding: 0px 0px 15px;
             @include desktop() {
               font-size: 30px;
+            }
+            @include tablet() {
+              font-size: 25px;
+              padding: 15px 0;
             }
           }
           .service-content {
@@ -879,6 +1026,10 @@ body.fixed {
               color: black;
               font-weight: 400;
               padding-right: 20px;
+              @include tablet() {
+                font-size: 14px;
+                padding: 0;
+              }
             }
           }
         }
@@ -888,6 +1039,9 @@ body.fixed {
             width: 100%;
             height: 100%;
             object-fit: cover;
+          }
+          @include tablet() {
+            width: 100%;
           }
         }
       }
@@ -908,6 +1062,9 @@ body.fixed {
     @include desktop() {
       height: 270px;
     }
+    @include tablet() {
+      height: 200px;
+    }
     .inqury-banner-inner-bg {
       width: 100%;
       height: 100%;
@@ -925,6 +1082,10 @@ body.fixed {
       @include desktop() {
         max-width: 1024px;
       }
+      @include tablet() {
+        max-width: auto;
+        width: 90%;
+      }
       strong {
         font-size: 47px;
         position: absolute;
@@ -934,6 +1095,10 @@ body.fixed {
         @include desktop() {
           font-size: 35px;
           bottom: 50px;
+        }
+        @include tablet() {
+          font-size: 28px;
+          bottom: 20px;
         }
       }
     }
@@ -946,12 +1111,19 @@ body.fixed {
     @include desktop() {
       max-width: 1024px;
     }
+    @include tablet() {
+      max-width: auto;
+      width: 90%;
+    }
     strong {
       font-size: 32px;
       pointer-events: none;
       color: #001c51;
       @include desktop() {
         font-size: 30px;
+      }
+      @include tablet() {
+        font-size: 27px;
       }
     }
     form {
@@ -960,6 +1132,10 @@ body.fixed {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      @include tablet() {
+        flex-direction: column;
+        justify-content: flex-start;
+      }
 
       label {
         font-size: 18px;
@@ -1005,6 +1181,9 @@ body.fixed {
         input {
           padding: 10px 2px;
         }
+        @include tablet() {
+          width: 100%;
+        }
       }
       .delivery,
       .container,
@@ -1016,6 +1195,10 @@ body.fixed {
         margin: 0;
         margin-bottom: 50px;
         padding: 0;
+        @include tablet() {
+          gap: 15px;
+          width: 100%;
+        }
         .delivery-box,
         .container-box {
           width: 100%;
@@ -1049,6 +1232,9 @@ body.fixed {
         display: flex;
         flex-direction: column;
         gap: 10px;
+        @include tablet() {
+          grid-area: 15px;
+        }
         textarea {
           width: 100%;
           height: 180px;
@@ -1164,6 +1350,9 @@ body.fixed {
     @include desktop() {
       height: 270px;
     }
+    @include tablet() {
+      height: 200px;
+    }
     .map-banner-inner-bg {
       width: 100%;
       height: 100%;
@@ -1181,6 +1370,10 @@ body.fixed {
       @include desktop() {
         max-width: 1024px;
       }
+      @include tablet() {
+        max-width: auto;
+        width: 90%;
+      }
       strong {
         font-size: 47px;
         position: absolute;
@@ -1196,10 +1389,18 @@ body.fixed {
             display: none;
           }
         }
+        @include tablet() {
+          font-size: 28px;
+          bottom: 20px;
+        }
         span {
           font-size: 20px;
           @include desktop() {
             font-size: 18px;
+          }
+          @include tablet() {
+            font-size: 16px;
+            font-weight: 500;
           }
         }
       }
@@ -1215,6 +1416,11 @@ body.fixed {
     @include desktop() {
       max-width: 1024px;
     }
+    @include tablet() {
+      max-width: auto;
+      width: 90%;
+      height: 400px;
+    }
   }
   .map-content {
     width: 100%;
@@ -1225,6 +1431,12 @@ body.fixed {
     align-items: flex-start;
     @include desktop() {
       max-width: 1024px;
+    }
+    @include tablet() {
+      max-width: auto;
+      width: 90%;
+      flex-direction: column;
+      gap: 30px;
     }
     div {
       display: flex;
@@ -1238,6 +1450,9 @@ body.fixed {
         @include desktop() {
           font-size: 20px;
         }
+        @include tablet() {
+          font-size: 18px;
+        }
       }
       span {
         display: block;
@@ -1247,6 +1462,9 @@ body.fixed {
         pointer-events: none;
         @include desktop() {
           font-size: 16px;
+        }
+        @include tablet() {
+          font-size: 14px;
         }
       }
     }
@@ -1269,6 +1487,10 @@ body.fixed {
     pointer-events: none;
     @include desktop() {
       max-width: 1024px;
+    }
+    @include tablet() {
+      max-width: auto;
+      width: 90%;
     }
     h1 {
       font-size: 18px;

@@ -145,6 +145,9 @@ function Nav() {
                         navigate("/about");
                         setShow(false);
                         window.scrollTo({ top: 0, behavior: "smooth" });
+                        document
+                          .querySelector("body")
+                          ?.classList.remove("fixed");
                       }}
                     >
                       {t(`nav.introduction`)}
@@ -156,6 +159,9 @@ function Nav() {
                         navigate("/service");
                         setShow(false);
                         window.scrollTo({ top: 0, behavior: "smooth" });
+                        document
+                          .querySelector("body")
+                          ?.classList.remove("fixed");
                       }}
                     >
                       {t(`nav.services`)}
@@ -167,6 +173,9 @@ function Nav() {
                         navigate("/inqury");
                         setShow(false);
                         window.scrollTo({ top: 0, behavior: "smooth" });
+                        document
+                          .querySelector("body")
+                          ?.classList.remove("fixed");
                       }}
                     >
                       {t(`nav.quotes`)}
@@ -178,6 +187,9 @@ function Nav() {
                         navigate("/location");
                         setShow(false);
                         window.scrollTo({ top: 0, behavior: "smooth" });
+                        document
+                          .querySelector("body")
+                          ?.classList.remove("fixed");
                       }}
                     >
                       {t(`nav.contact`)}
