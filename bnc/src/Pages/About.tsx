@@ -43,7 +43,7 @@ function About() {
               <strong>{t(`about.america.title`)}</strong>
               <div className="introduction-content">
                 <p>{t(`about.america.content-first`)}</p>
-                <p>{t(`about.america.content-first`)}</p>
+                <p>{t(`about.america.content-second`)}</p>
                 <p>{t(`about.america.content-third`)}</p>
                 <p>{t(`about.america.content-four`)}</p>
               </div>
