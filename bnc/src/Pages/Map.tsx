@@ -16,11 +16,17 @@ function Map() {
       {/* 지도 */}
       <div className="map-wrapper">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.469458645424!2d126.95071975634781!3d37.54400185687942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c98a0b86a2673%3A0x82e0b3a82b3a013b!2z7ISc7Jq47Yq567OE7IucIOuniO2PrOq1rCDrp4zrpqzsnqzroZwgMTQ!5e0!3m2!1sko!2skr!4v1701093455566!5m2!1sko!2skr"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.471714292492!2d126.952818!3d37.5439487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c98a0b85b9da5%3A0xe5e7fe2fef8333e1!2zKOyjvCnruYTsl5TslKjroZzsp4DsiqTti7E!5e0!3m2!1sko!2skr!4v1703752210869!5m2!1sko!2skr"
           width="100%"
           height="100%"
           loading="lazy"
         ></iframe>
+        {/* <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.469458645424!2d126.95071975634781!3d37.54400185687942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c98a0b86a2673%3A0x82e0b3a82b3a013b!2z7ISc7Jq47Yq567OE7IucIOuniO2PrOq1rCDrp4zrpqzsnqzroZwgMTQ!5e0!3m2!1sko!2skr!4v1701093455566!5m2!1sko!2skr"
+          width="100%"
+          height="100%"
+          loading="lazy"
+        ></iframe> */}
       </div>
       {/* 지도 내용 */}
       <div className="map-content">
