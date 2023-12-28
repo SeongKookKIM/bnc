@@ -20,7 +20,7 @@ function Inqury() {
 
   const formRef = useRef<HTMLFormElement | null>(null);
 
-  const hanlderEmail = (e: any) => {
+  const hanlderEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (name === "") {

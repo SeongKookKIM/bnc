@@ -1,12 +1,17 @@
-import React, { useEffect } from "react";
+import React, { Suspense, lazy, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "./Pages/Home";
 import Nav from "./Components/Nav";
 import Footer from "./Components/Footer";
-import About from "./Pages/About";
-import Service from "./Pages/Service";
-import Inqury from "./Pages/Inqury";
-import Map from "./Pages/Map";
+
+const Home = lazy(() => import("./Pages/Home"));
+
+const About = lazy(() => import("./Pages/About"));
+
+const Service = lazy(() => import("./Pages/Service"));
+
+const Inqury = lazy(() => import("./Pages/Inqury"));
+
+const Map = lazy(() => import("./Pages/Map"));
 
 function App() {
   function setScreenSize() {
@@ -19,13 +24,15 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/service" element={<Service />}></Route>
-        <Route path="/inqury" element={<Inqury />}></Route>
-        <Route path="/location" element={<Map />}></Route>
-      </Routes>
+      <Suspense fallback={<div>Loading</div>}>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/service" element={<Service />}></Route>
+          <Route path="/inqury" element={<Inqury />}></Route>
+          <Route path="/location" element={<Map />}></Route>
+        </Routes>
+      </Suspense>
       <Footer />
     </div>
   );
